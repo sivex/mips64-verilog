@@ -18,8 +18,8 @@ module sign_Extend(a, out);
 	parameter SIZE_IN = 32;
 	parameter SIZE_OUT = 64;
 
-	input [(SIZE_IN-1):0] a;							// Input and output set as given bit 
-	output [(SIZE_OUT-1):0] out;						// lengths defined in parameters
+	input [(SIZE_IN-1):0] a;			// Input and output set as given bit 
+	output [(SIZE_OUT-1):0] out;			// lengths defined in parameters
 	
 	assign out = {{SIZE_IN{a[(SIZE_IN-1)]}}, a};	// Concatenate / sign extend by 
 																// the size in value
