@@ -17,9 +17,9 @@ module adder(a, b, out);
 	// Parameter for setting value
 	parameter SIZE = 64;
 	
-	input [(SIZE-1):0] a, b;		// Set a and b the given size
+	input [(SIZE-1):0] a, b;	// Set a and b the given size
 	output [(SIZE-1):0] out;
 	
-	assign out = a + b;				// Add a and b
+	assign out = a + b;		// Add a and b
 	
 endmodule
