@@ -36,7 +36,7 @@ module data_MEM(addr, d_in, d_out, en, wr, clk);
 			end
 			else begin
 				d_out <= data_RAM[addr];	// Send out the data at the address given 
-			end									// if it is a read (not wr). 
+			end					// if it is a read (not wr). 
 		end				
 	end
 				
