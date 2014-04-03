@@ -8,7 +8,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
-// Description: 	Adds for to a given bit size of an input value
+// Description: 	Adds four to a given bit size of an input value
 //
 //
 //////////////////////////////////////////////////////////////////////////////////
