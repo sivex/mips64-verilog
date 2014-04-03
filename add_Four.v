@@ -20,6 +20,6 @@ module add_Four(a, out);
 	input [(SIZE-1):0] a;		// Set a and out the given size
 	output [(SIZE-1):0] out;
 
-	assign out = a + 4;			// Add 4 to a and assign out;
+	assign out = a + 4;		// Add 4 to a and assign out;
 	
 endmodule
