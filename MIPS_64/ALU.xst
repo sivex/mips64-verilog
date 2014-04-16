@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Paul/Desktop/School/CMPE415/Homework/MIPS_64/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Paul/Desktop/School/CMPE415/Homework/MIPS_64/xst"
-elaborate
--ifn ALU.prj
--ifmt mixed
