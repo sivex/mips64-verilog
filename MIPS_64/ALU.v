@@ -19,7 +19,7 @@ module ALU(control, a, b, out, zero, overflow);
 	output reg overflow;
 	output zero;
 
-	// Register for collecting the high 32 bits of mult
+	// Register for collecting the high 64 bits of mult
 	reg [(SIZE-1):0] high_mult;
 
 	//Assign zero is true if out is 0
