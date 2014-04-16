@@ -1,4 +1,4 @@
-ntermediate build files
+# intermediate build files
 *.bgn
 *.bit
 *.bld
