@@ -28,8 +28,8 @@ module data_MEM(addr, d_in, d_out, en, wr, clk);
 	always@ (posedge clk) begin
 		// When en is on, the RAM is active.
 		if (en) begin
-			// When wr is on, the corresponding address is written in the Data RAM
-			// and output.
+			// When wr is on, the corresponding address is written in the Data
+			// RAM and output.
 			if (wr) begin
 				data_RAM[addr] <= d_in;
 				d_out <= d_in;
