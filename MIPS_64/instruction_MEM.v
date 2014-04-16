@@ -11,7 +11,7 @@ module instruction_MEM(index, instruction, en, wr, clk);
 
 	// Make parameter values for easy RAM size changes
 	parameter DATA_BITS = 64;
-	parameter IMEM_SIZE = 128
+	parameter IMEM_SIZE = 128;
 
 	// Inputs/Outputs defined
 	input [5:0] index;
