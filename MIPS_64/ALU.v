@@ -6,14 +6,20 @@
 // Module Name: ALU
 // Description: ALU for a MIPS machine. Contains options for AND, OR, NOR, ADD,
 //				SUB, MULT, and EQ
+//
+//				control 	- 1 - AND			- 5 - EQ
+//							- 2 - OR				- 6 - MULT
+//							- 3 - ADD			- 7 - NOR
+//							- 4 - SUB
+//						
 ////////////////////////////////////////////////////////////////////////////////
-module ALU(control, a, b, out, zero, overflow);
+module ALU(ALUOp, a, b, out, zero, overflow);
 
 	// Parameterized input and output bit length
 	parameter SIZE = 64;
 
 	// Inputs and outputs
-	input [3:0] control;
+	input [3:0] ALUOp;
 	input [(SIZE-1):0] a,b;
 	output reg [(SIZE-1):0] out;
 	output reg overflow;
@@ -26,9 +32,9 @@ module ALU(control, a, b, out, zero, overflow);
 	assign zero = (out == 0);
 
 	// Cases for ALU
-	always @(control, a, b) begin
+	always @(ALUOp, a, b) begin
 
-		case (control)
+		case (ALUOp)
 			4'b0001: begin
 				// AND
 				out <= a & b;
