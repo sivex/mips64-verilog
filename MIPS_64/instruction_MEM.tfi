@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+instruction_MEM instance_name (
+    .index(index), 
+    .instruction(instruction), 
+    .en(en), 
+    .wr(wr), 
+    .clk(clk)
+    );
+
+

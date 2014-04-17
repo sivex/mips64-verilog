@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+data_MEM instance_name (
+    .readAddress(readAddress), 
+    .writeAddress(writeAddress), 
+    .writeData(writeData), 
+    .readData(readData), 
+    .memWrite(memWrite), 
+    .memRead(memRead), 
+    .clk(clk)
+    );
+
+

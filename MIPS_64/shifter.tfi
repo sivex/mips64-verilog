@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+shifter instance_name (
+    .a(a), 
+    .out(out)
+    );
+
+

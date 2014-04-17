@@ -20,5 +20,137 @@ module dataPath(clk, imem, dmem);
 	input [(SIZE-1):0] imem;
 	output [(SIZE-1):0] dmem;
 	
+	wire index_out;
+
+		PC instance_name (
+			 .clk(clk), 
+			 .PCen(PCen), 
+			 .index_in(index_in), 
+			 .index_out(index_out)
+			 );
+
+		add_Four instance_name (
+			 .a(index_out), 
+			 .out(outAddFour)
+			 );
+
+		instruction_MEM instance_name (
+			 .index(index_out), 
+			 .instruction(instruction), 
+			 .en(en), 
+			 .wr(wr), 
+			 .clk(clk)
+			 );
+
+		
+		mux_5bit instance_name (
+			 .a(instruction[20:16]), 
+			 .b(instruction[15:11]), 
+			 .ctrl(RegDst), 
+			 .out(writeReg)
+			 );
+
+		registers instance_name (
+			 .readReg1(instruction[25:21]), 
+			 .readReg2(instruction[20:16]), 
+			 .writeReg(writeReg), 
+			 .writeData(writeData), 
+			 .readData1(readData1), 
+			 .readData2(readData2), 
+			 .regWrite(regWrite)
+			 );
+
+		sign_Extend instance_name (
+			 .a(instruction[15:0]), 
+			 .out(sign_ExtendOut)
+			 );
+
+		mux_64bit ALUSrc (
+		 .a(readData2), 
+		 .b(sign_ExtendOut), 
+		 .ctrl(ALUSrc), 
+		 .out(ALUIn)
+		 );	
+
+		ALU instance_name (
+			 .ALUOp(ALUOp), 
+			 .a(readData1), 
+			 .b(ALUIn), 
+			 .out(ALUOut), 
+			 .zero(zero), 
+			 .overflow(overflow)
+			 );
+
+// create shift left 2, 
+// adder. 
+// pc src
+
+
+		shifter instance_name (
+			 .a(sign_ExtendOut), 
+			 .out(outTemp)
+			 );
+		adder adderPC (
+			 .a(outTemp), 
+			 .b(outAddFour), 
+			 .out(outAdderPC)
+			 );
+		mux_64bit PCSrc (
+			 .a(outAddFour), 
+			 .b(outAdderPC), 
+			 .ctrl(PCSrc), 
+			 .out(index_in)
+			 );
+
+// look over the dataMem logic again. Just creating the schematic, but the logic may be
+// different with the two control signals I've created according to our control module
+		data_MEM instance_name (
+			 .readAddress(ALUOut), 
+			 .writeAddress(ALUOut), 
+			 .writeData(readData2), 
+			 .readDataMem(readDataMem), 
+			 .memWrite(memWrite), 
+			 .memRead(memRead), 
+			 .clk(clk)
+			 );
+
+		mux_64bit memToReg (
+			 .a(ALUOut), 
+			 .b(readDataMem), 
+			 .ctrl(MemToReg), 
+			 .out(regWrite)
+			 );
+
+
+		control_unit instance_name (
+			 .clk(clk), 
+			 .inst(inst), 
+			 .zero(zero), 
+			 .RegDst(RegDst), 
+			 .RegWrite(RegWrite), 
+			 .ALUSrc(ALUSrc), 
+			 .ALUOp(ALUOp), 
+			 .PCSrc(PCSrc), 
+			 .PCen(PCen), 
+			 .MemWrite(MemWrite), 
+			 .MemRead(MemRead), 
+			 .MemToReg(MemToReg)
+			 );
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 
 endmodule

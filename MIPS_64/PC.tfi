@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+PC instance_name (
+    .clk(clk), 
+    .PCen(PCen), 
+    .index_in(index_in), 
+    .index_out(index_out)
+    );
+
+

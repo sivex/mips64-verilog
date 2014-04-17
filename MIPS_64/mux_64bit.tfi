@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+mux_64bit instance_name (
+    .a(a), 
+    .b(b), 
+    .ctrl(ctrl), 
+    .out(out)
+    );
+
+

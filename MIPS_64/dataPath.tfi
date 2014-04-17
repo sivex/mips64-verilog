@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+dataPath instance_name (
+    .clk(clk), 
+    .imem(imem), 
+    .dmem(dmem)
+    );
+
+

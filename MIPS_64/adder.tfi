@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+adder instance_name (
+    .a(a), 
+    .b(b), 
+    .out(out)
+    );
+
+
