@@ -1,5 +1,3 @@
-# notes
-
-MIPS OPCODES TABLE
-https://www.student.cs.uwaterloo.ca/~isg/res/mips/opcodes
+# links
+[MIPS OPCODES TABLE](https://www.student.cs.uwaterloo.ca/~isg/res/mips/opcodes)
 
