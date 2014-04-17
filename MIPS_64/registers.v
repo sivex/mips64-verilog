@@ -8,7 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 module registers( readReg1, readReg2, writeReg, writeData, readData1, readData2, regWrite, clk);
 
-	parameter SIZE = 64;
+	parameter SIZE = 32;
 	
 	reg [(SIZE-1):0] REGISTERS[31:0];
 

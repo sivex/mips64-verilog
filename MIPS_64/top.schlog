@@ -1,0 +1,4 @@
+select figure at 719 1818 8 -branches -sn=1
+update symbols PC
+select figure at 459 1476 8 -branches -sn=1
+move instance at 128 1568 to 144 1552 R0 -keepConn -sn=1

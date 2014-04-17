@@ -7,16 +7,14 @@
 // Description: Instruction memory module for the MIPS 64-bit CPU
 ////////////////////////////////////////////////////////////////////////////////
 
-module instruction_MEM(index, instruction, en, wr, clk);
+module instruction_MEM(index, instruction, clk);
 
 	// Make parameter values for easy RAM size changes
-	parameter DATA_BITS = 64;
+	parameter DATA_BITS = 32;
 	parameter IMEM_SIZE = 128;
 
 	// Inputs/Outputs defined
 	input [5:0] index;
-	input en;			// Enable
-	input wr;			// Write
 	input clk;			// Clock
 	output [(DATA_BITS-1):0] instruction;
 
@@ -25,9 +23,7 @@ module instruction_MEM(index, instruction, en, wr, clk);
 
 	// Main RAM code
 	always@ (posedge clk) begin
-		// When en is on, the RAM is active.
-		if (en) begin
-			if (wr) begin
+
 				// TODO: implement copying instructions (code) into IMEM
 			end
 			// Output the instruction from the given index (!wr)
