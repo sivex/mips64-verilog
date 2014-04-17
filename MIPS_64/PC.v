@@ -17,7 +17,7 @@ module PC(clk, index_in, index_out, rst);
 	output reg [(SIZE-1):0] index_out;
 
 	// Register for index of the next instruction
-	always @(posedge clk) begin
+	always @(negedge clk) begin
 
 		//reset program counter on rst
 		if (rst) begin

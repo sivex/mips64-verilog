@@ -14,23 +14,18 @@ module instruction_MEM(index, instruction, clk);
 	parameter IMEM_SIZE = 128;
 
 	// Inputs/Outputs defined
-	input [5:0] index;
+	input [(DATA_BITS-1):0] index;
 	input clk;			// Clock
 	output [(DATA_BITS-1):0] instruction;
 
 	// Instruction RAM register
 	reg [(DATA_BITS-1):0] instruction_RAM [(IMEM_SIZE-1):0];
 
-	// Main RAM code
+	// Output instruction at given index on positive edge
 	always@ (posedge clk) begin
 
-				// TODO: implement copying instructions (code) into IMEM
-			end
-			// Output the instruction from the given index (!wr)
-			else begin
-				//instruction <= instruction_RAM[index];
-			end
-		end
+	instruction <= instruction_RAM[index];
+	
 	end
 
 endmodule
