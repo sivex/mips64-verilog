@@ -22,19 +22,19 @@ module dataPath(clk, imem, dmem);
 	
 	wire index_out;
 
-		PC instance_name (
+		PC programCounter (
 			 .clk(clk), 
 			 .PCen(PCen), 
 			 .index_in(index_in), 
 			 .index_out(index_out)
 			 );
 
-		add_Four instance_name (
+		add_Four addFour (
 			 .a(index_out), 
 			 .out(outAddFour)
 			 );
 
-		instruction_MEM instance_name (
+		instruction_MEM IMEM (
 			 .index(index_out), 
 			 .instruction(instruction), 
 			 .en(en), 
@@ -43,14 +43,14 @@ module dataPath(clk, imem, dmem);
 			 );
 
 		
-		mux_5bit instance_name (
+		mux_5bit fiveBitMux (
 			 .a(instruction[20:16]), 
 			 .b(instruction[15:11]), 
 			 .ctrl(RegDst), 
 			 .out(writeReg)
 			 );
 
-		registers instance_name (
+		registers register (
 			 .readReg1(instruction[25:21]), 
 			 .readReg2(instruction[20:16]), 
 			 .writeReg(writeReg), 
@@ -60,19 +60,19 @@ module dataPath(clk, imem, dmem);
 			 .regWrite(regWrite)
 			 );
 
-		sign_Extend instance_name (
+		sign_Extend singExtend (
 			 .a(instruction[15:0]), 
 			 .out(sign_ExtendOut)
 			 );
 
-		mux_64bit ALUSrc (
+		mux_64bit ALUSrcMux (
 		 .a(readData2), 
 		 .b(sign_ExtendOut), 
 		 .ctrl(ALUSrc), 
 		 .out(ALUIn)
 		 );	
 
-		ALU instance_name (
+		ALU ALU (
 			 .ALUOp(ALUOp), 
 			 .a(readData1), 
 			 .b(ALUIn), 
@@ -81,12 +81,7 @@ module dataPath(clk, imem, dmem);
 			 .overflow(overflow)
 			 );
 
-// create shift left 2, 
-// adder. 
-// pc src
-
-
-		shifter instance_name (
+		shifter shifter (
 			 .a(sign_ExtendOut), 
 			 .out(outTemp)
 			 );
@@ -95,7 +90,7 @@ module dataPath(clk, imem, dmem);
 			 .b(outAddFour), 
 			 .out(outAdderPC)
 			 );
-		mux_64bit PCSrc (
+		mux_64bit PCSrcMux (
 			 .a(outAddFour), 
 			 .b(outAdderPC), 
 			 .ctrl(PCSrc), 
@@ -104,7 +99,7 @@ module dataPath(clk, imem, dmem);
 
 // look over the dataMem logic again. Just creating the schematic, but the logic may be
 // different with the two control signals I've created according to our control module
-		data_MEM instance_name (
+		data_MEM dataMem (
 			 .readAddress(ALUOut), 
 			 .writeAddress(ALUOut), 
 			 .writeData(readData2), 
@@ -114,7 +109,7 @@ module dataPath(clk, imem, dmem);
 			 .clk(clk)
 			 );
 
-		mux_64bit memToReg (
+		mux_64bit memToRegMux (
 			 .a(ALUOut), 
 			 .b(readDataMem), 
 			 .ctrl(MemToReg), 
@@ -122,7 +117,7 @@ module dataPath(clk, imem, dmem);
 			 );
 
 
-		control_unit instance_name (
+		control_unit controlUnit (
 			 .clk(clk), 
 			 .inst(inst), 
 			 .zero(zero), 
