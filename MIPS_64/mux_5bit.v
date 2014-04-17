@@ -14,6 +14,6 @@ module mux_5bit(a, b, ctrl, out);
 
 	// If ctrl = 1 -> a
 	// If ctrl = 0 -> b
-	assign out = (ctrl) ? (a) : (b);
+	assign out = (ctrl) ? a : b;
 
 endmodule
