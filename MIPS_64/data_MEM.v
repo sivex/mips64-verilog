@@ -10,8 +10,8 @@
 module data_MEM(readAddress, writeAddress, writeData, readDataMem, memWrite, memRead, clk);
 
 	// Make parameter values for easy RAM size changes
-	parameter DATA_BITS = 64;
-	parameter ADDR_BITS = 64;
+	parameter DATA_BITS = 32;
+	parameter ADDR_BITS = 32;
 
 	// All inputs and outputs defined
 	input [(ADDR_BITS-1):0] writeAddress; // Write Address

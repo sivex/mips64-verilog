@@ -9,8 +9,8 @@
 module sign_Extend(a, out);
 
 	// Parameters for setting values
-	parameter SIZE_IN = 32;
-	parameter SIZE_OUT = 64;
+	parameter SIZE_IN = 16;
+	parameter SIZE_OUT = 32;
 
 	// Input and output set as given bit lengths defined in parameters
 	input [(SIZE_IN-1):0] a;

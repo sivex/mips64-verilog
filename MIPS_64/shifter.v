@@ -9,7 +9,7 @@
 module shifter(a, out);
 
 	// Parameters for setting values
-	parameter SIZE = 64;
+	parameter SIZE = 32;
 	parameter SHIFT_N = 2;
 
 	// input and output same bit length

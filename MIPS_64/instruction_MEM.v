@@ -4,7 +4,7 @@
 //
 // Create Date: 7:07:00 04/10/2014
 // Module Name: instruction_MEM
-// Description: Instruction memory module for the MIPS 64-bit CPU
+// Description: Instruction memory module for the MIPS 32-bit CPU
 ////////////////////////////////////////////////////////////////////////////////
 
 module instruction_MEM(index, instruction, clk);

@@ -9,7 +9,7 @@
 module add_Four(a, out);
 
 	// Parameter for setting value
-	parameter SIZE = 64;
+	parameter SIZE = 32;
 
 	// Set a and out the given size
 	input [(SIZE-1):0] a;

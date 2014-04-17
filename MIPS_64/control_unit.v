@@ -9,7 +9,7 @@
 module control_unit(clk, inst, zero, RegDst, RegWrite, ALUSrc, ALUOp,
 							PCSrc, PCen, MemWrite, MemRead, MemToReg);
 
-	parameter SIZE = 64;
+	parameter SIZE = 32;
 
 	input clk;
 	input [(SIZE-1):0] inst;

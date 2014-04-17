@@ -15,7 +15,7 @@
 module ALU(ALUOp, a, b, out, zero, overflow);
 
 	// Parameterized input and output bit length
-	parameter SIZE = 64;
+	parameter SIZE = 32;
 
 	// Inputs and outputs
 	input [3:0] ALUOp;
@@ -24,7 +24,7 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 	output reg overflow;
 	output zero;
 
-	// Register for collecting the high 64 bits of mult
+	// Register for collecting the high 32 bits of mult
 	reg [(SIZE-1):0] high_mult;
 
 	//Assign zero is true if out is 0
