@@ -32,7 +32,7 @@ module instruction_MEM(index, instruction, en, wr, clk);
 			end
 			// Output the instruction from the given index (!wr)
 			else begin
-				instruction <= instruction_RAM[index];
+				//instruction <= instruction_RAM[index];
 			end
 		end
 	end

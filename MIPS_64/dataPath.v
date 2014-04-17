@@ -12,13 +12,13 @@
 //
 //
 //////////////////////////////////////////////////////////////////////////////////
-module dataPath(clk, imem, dmem);
+module dataPath(clk, imem, readDataMem);
 
 	parameter SIZE = 64;
 	
 	input clk;
 	input [(SIZE-1):0] imem;
-	output [(SIZE-1):0] dmem;
+	output [(SIZE-1):0] readDataMem;
 	
 	wire index_out;
 
@@ -36,7 +36,7 @@ module dataPath(clk, imem, dmem);
 
 		instruction_MEM IMEM (
 			 .index(index_out), 
-			 .instruction(instruction), 
+			 .instruction(imem), 
 			 .en(en), 
 			 .wr(wr), 
 			 .clk(clk)
@@ -44,15 +44,15 @@ module dataPath(clk, imem, dmem);
 
 		
 		mux_5bit fiveBitMux (
-			 .a(instruction[20:16]), 
-			 .b(instruction[15:11]), 
+			 .a(instruction), //instruction[20:16]
+			 .b(instruction), //instruction[15:11]
 			 .ctrl(RegDst), 
 			 .out(writeReg)
 			 );
 
 		registers register (
-			 .readReg1(instruction[25:21]), 
-			 .readReg2(instruction[20:16]), 
+			 .readReg1(instruction), //instruction[25:21]
+			 .readReg2(instruction), //instruction[20:16]
 			 .writeReg(writeReg), 
 			 .writeData(writeData), 
 			 .readData1(readData1), 
@@ -61,7 +61,7 @@ module dataPath(clk, imem, dmem);
 			 );
 
 		sign_Extend singExtend (
-			 .a(instruction[15:0]), 
+			 .a(instruction), //instruction[15:0]
 			 .out(sign_ExtendOut)
 			 );
 

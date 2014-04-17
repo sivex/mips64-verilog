@@ -1,0 +1,9 @@
+[Inputs]
+clk
+=imem[63:0]=
+[Outputs]
+=readDataMem[63:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel dataPath
+
