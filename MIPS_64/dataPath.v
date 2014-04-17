@@ -14,11 +14,12 @@ module dataPath(clk, imem, readDataMem);
 	input [(SIZE-1):0] imem;
 	output [(SIZE-1):0] readDataMem;
 
-	wire index_out;
+	wire PC_en, WR_en, IM_en;
+	wire [(SIZE-1):0] index_in, index_out, outAddFour, IM_out;
 
 		PC programCounter (
 			.clk(clk),
-			.PCen(PCen),
+			.PCen(PC_en),
 			.index_in(index_in),
 			.index_out(index_out)
 		);
@@ -30,18 +31,20 @@ module dataPath(clk, imem, readDataMem);
 
 		instruction_MEM IMEM (
 			.index(index_out),
-			.instruction(imem),
-			.en(en),
-			.wr(wr),
+			.instruction(IM_out),
+			.en(IM_en),
+			.wr(WR_en),
 			.clk(clk)
 		);
 
 		mux_5bit fiveBitMux (
-			.a(instruction), //instruction[20:16]
-			.b(instruction), //instruction[15:11]
+			.a(IM_out), //instruction[20:16]
+			.b(IM_out), //instruction[15:11]
 			.ctrl(RegDst),
 			.out(writeReg)
 		);
+
+// Made wires until here.
 
 		registers register (
 			.readReg1(instruction), //instruction[25:21]
