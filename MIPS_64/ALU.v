@@ -32,33 +32,25 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 	// Cases for ALU
 	always @(ALUOp, a, b) begin
 		case (ALUOp)
-			4'b0001: begin
+			4'b0000: begin
 				// AND
 				out <= a & b;
 			end
-			4'b0010: begin
+			4'b0001: begin
 				// OR
 				out <= a | b;
 			end
-			4'b0011: begin
+			4'b0010: begin
 				// ADD
 				{overflow,out} <= a + b;
 			end
-			4'b0100: begin
+			4'b0110: begin
 				// SUB
 				{overflow,out} <= a - b;
-			end
-			4'b0101: begin
-				// EQ
-				out <= (a == b) ? 1 : 0;
 			end
 			4'b0110: begin
 				// MULT
 				{high_mult,out} <= a * b;
-			end
-			4'b0111: begin
-				// NOR
-				out <= ~(a | b);
 			end
 			default: begin
 				// Default to 0 (should not happen)
