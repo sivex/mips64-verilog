@@ -4,13 +4,12 @@
 //
 // Create Date: 17:41:43 04/05/2014
 // Module Name: ALU
-// Description: ALU for a MIPS machine. Contains options for AND, OR, NOR, ADD,
-//				SUB, MULT, and EQ
-//
-//				control 	- 1 - AND			- 5 - EQ
-//							- 2 - OR				- 6 - MULT
-//							- 3 - ADD			- 7 - NOR
-//							- 4 - SUB
+// Description: ALU for a MIPS machine. Contains options for AND, OR, NOR, ADD, 
+//		SUB, MULT, and EQ
+//		control: 1 - AND	|	5 - EQ
+//					2 - OR	|	6 - MULT
+//					3 - ADD	|	7 - NOR
+//					4 - SUB
 ////////////////////////////////////////////////////////////////////////////////
 module ALU(ALUOp, a, b, out, zero, overflow);
 
@@ -27,12 +26,11 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 	// Register for collecting the high 32 bits of mult
 	reg [(SIZE-1):0] high_mult;
 
-	//Assign zero is true if out is 0
+	// Assign true if out is 0
 	assign zero = (out == 0);
 
 	// Cases for ALU
 	always @(ALUOp, a, b) begin
-
 		case (ALUOp)
 			4'b0001: begin
 				// AND
@@ -51,7 +49,7 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 				{overflow,out} <= a - b;
 			end
 			4'b0101: begin
-				// Equality
+				// EQ
 				out <= (a == b) ? 1 : 0;
 			end
 			4'b0110: begin
@@ -68,5 +66,4 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 			end
 		endcase
 	end
-
 endmodule
