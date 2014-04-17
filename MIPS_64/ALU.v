@@ -24,7 +24,7 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 	output zero;
 
 	// Register for collecting the high 32 bits of mult
-	reg [(SIZE-1):0] high_mult;
+	//reg [(SIZE-1):0] high_mult;
 
 	// Assign true if out is 0
 	assign zero = (out == 0);
@@ -47,10 +47,6 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 			4'b0110: begin
 				// SUB
 				{overflow,out} <= a - b;
-			end
-			4'b0110: begin
-				// MULT
-				{high_mult,out} <= a * b;
 			end
 			default: begin
 				// Default to 0 (should not happen)

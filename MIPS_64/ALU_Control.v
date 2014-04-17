@@ -17,20 +17,19 @@ module ALU_Control(
 	 always @ (ALUOp or function_field) begin
 	 
 	 case(ALUOp)
-		2'b00: ALUCtrl <= 4'b0010;
-		2'b01: ALUCtrl <= 4'b0110;
+		2'b00: ALUCtrl <= 4'b0010; //add
+		2'b01: ALUCtrl <= 4'b0110; //subtract
 		2'b1?:
 		begin
 			case(function_field)
-				6'b??0000: ALUCtrl <= 4'b0010;
-				6'b??0010: ALUCtrl <= 4'b0110;
-				6'b??0100: ALUCtrl <= 4'b0000;
-				6'b??0101: ALUCtrl <= 4'b0001;
-				6'b??1010: ALUCtrl <= 4'b0111;
-				default: ALUCtrl <= 4'b1110;
+				6'b??0000: ALUCtrl <= 4'b0010; //add
+				6'b??0010: ALUCtrl <= 4'b0110; //subtract
+				6'b??0100: ALUCtrl <= 4'b0000; //AND
+				6'b??0101: ALUCtrl <= 4'b0001; //OR
+				default: ALUCtrl <= 4'b1110; //error checking
 			endcase
 		end
-		default: ALUCtrl <= 4'b1111;
+		default: ALUCtrl <= 4'b1111; //error checking
 		
 	endcase
 	
