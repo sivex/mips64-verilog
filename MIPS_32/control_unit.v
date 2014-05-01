@@ -13,9 +13,6 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 	output RegDst, RegWrite, ALUSrc, PCSrc, PCen, MemWrite, MemRead, MemToReg, Branch;
 	output [1:0] ALUOp;
 
-	// type of instruction
-	reg R,I,J; 
-
 	// inst.	OPCODE	TYPE
 	// add 	100000	R
 	// addi	001000	I
@@ -27,8 +24,10 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 	//
 	// determine type of instruction
 	always @(posedge clk) begin
+	
 	RegDst=0;RegWrite=0;ALUSrc=0;MemWrite=0;MemRead=0;MemToReg=0;Branch=0;
-		if(inst == 100000) begin
+	
+		if(inst == 000000) begin
 			ALUSrc = 0;
 			RegWrite = 0;
 			ALUOp = 2'b10;
@@ -37,6 +36,7 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			RegDst = 1;
 			Branch = 0;
 		end
+		
 		else if (inst == 001000) begin
 			RegWrite = 1;
 			RegDst = 0;
@@ -45,6 +45,7 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			MemToReg = 0;
 			ALUOp = 10;
 		end
+		
 		else if (inst == 100011) begin
 			RegWrite = 1;
 			RegDst = 0;
@@ -54,6 +55,7 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			MemToReg = 1;
 			ALUOp = 2'b00;
 		end
+		
 		else if (inst == 101011) begin
 			RegWrite = 0;
 			RegDst = 0;
@@ -63,6 +65,7 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			MemToReg = 0;
 			ALUOp = 2'b00;
 		end
+		
 	end
 
 endmodule

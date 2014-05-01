@@ -9,6 +9,10 @@
 
 module instruction_MEM(index, instruction, clk);
 
+initial begin
+	$readmemb("instructions.txt", instruction_RAM);
+end
+
 	// Make parameter values for easy RAM size changes
 	parameter DATA_BITS = 32;
 	parameter IMEM_SIZE = 128;
