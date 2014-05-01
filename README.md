@@ -1,6 +1,6 @@
-# mips64-verilog
+# mips32-verilog
 
-A basic implementation of a single-cycle MIPS 64-bit CPU
+A basic implementation of a single-cycle MIPS ~~64-bit~~ 32-bit CPU
 
 ## collaborators
 
