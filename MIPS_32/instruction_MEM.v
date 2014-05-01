@@ -9,9 +9,7 @@
 
 module instruction_MEM(index, instruction, clk);
 
-initial begin
-	$readmemb("instructions.txt", instruction_RAM);
-end
+
 
 	// Make parameter values for easy RAM size changes
 	parameter DATA_BITS = 32;
@@ -20,15 +18,19 @@ end
 	// Inputs/Outputs defined
 	input [(DATA_BITS-1):0] index;
 	input clk;			// Clock
-	output [(DATA_BITS-1):0] instruction;
+	output reg [(DATA_BITS-1):0] instruction;
 
 	// Instruction RAM register
 	reg [(DATA_BITS-1):0] instruction_RAM [(IMEM_SIZE-1):0];
 
+	initial begin
+		$readmemb("instructions.txt", instruction_RAM);
+	end
+
 	// Output instruction at given index on positive edge
 	always@ (posedge clk) begin
 
-	instruction <= instruction_RAM[index];
+		instruction <= instruction_RAM[index];
 	
 	end
 
