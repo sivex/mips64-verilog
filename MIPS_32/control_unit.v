@@ -8,11 +8,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 							PCSrc, PCen, MemWrite, MemRead, MemToReg);
-
-
 	input clk;
-	input [4:0] inst;
-	output RegDst, RegWrite, ALUSrc, PCSrc, PCen, MemWrite, MemRead, MemToReg;
+	input [5:0] inst;
+	output RegDst, RegWrite, ALUSrc, PCSrc, PCen, MemWrite, MemRead, MemToReg, Branch;
 	output [1:0] ALUOp;
 
 	// type of instruction
@@ -29,40 +27,24 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 	//
 	// determine type of instruction
 	always @(posedge clk) begin
+	RegDst=0;RegWrite=0;ALUSrc=0;MemWrite=0;MemRead=0;MemToReg=0;Branch=0;
 		if(inst == 100000) begin
-			R = 1;
-			I = 0;
-			J = 0;
-			end
-		else if((inst == 100011)||(inst == 101011)||(inst == 000100)||(inst == 000101)) begin  
-			R = 0;
-			I = 1;
-			J = 0;
-			end
-		else if((inst == 000010)) begin
-			R = 0;
-			I = 0;
-			J = 1;
-			end
-		end
-	// parse parts of instruction
-	always @(posedge clk) begin
-		// for Register-Type
-		if (R) begin
-			RegDst = 1;
 			ALUSrc = 0;
-			MemtoReg = 1;
+			RegWrite = 0;
 			ALUOp = 2'b10;
+			MemWrite = 0;
+			MemToReg = 0;
+			RegDst = 1;
+			Branch = 0;
 		end
-		// for Immediate-Type
-		else if (I) begin 
-
-			end
-		
-		// for J- Type
-		else if (J) begin
-
-			end
+		else if (inst == 001000) begin
+			RegWrite = 1;
+			RegDst = 0;
+			ALUSrc = 1;
+			MemWrite = 0;
+			MemToReg = 0;
+			ALUOp = 10;
+		end
 		end
 
 endmodule

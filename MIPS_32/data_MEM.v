@@ -7,16 +7,15 @@
 // Description: Data memory module for the MIPS CPU
 ////////////////////////////////////////////////////////////////////////////////
 
-module data_MEM(readAddress, writeAddress, writeData, readDataMem, memWrite, memRead, clk);
+module data_MEM(address, writeData, readDataMem, memWrite, memRead, clk);
 
 	// Make parameter values for easy RAM size changes
 	parameter DATA_BITS = 32;
 	parameter ADDR_BITS = 32;
 
 	// All inputs and outputs defined
-	input [(ADDR_BITS-1):0] writeAddress; // Write Address
+	input [(ADDR_BITS-1):0] address; // Address
 	input [(DATA_BITS-1):0] writeData; // Write Data
-	input readAddress;
 	input memWrite;
 	input memRead;
 	input clk;
@@ -32,12 +31,12 @@ module data_MEM(readAddress, writeAddress, writeData, readDataMem, memWrite, mem
 			// When wr is on, the corresponding address is written in the Data
 			// RAM and output.
 			if (memWrite) begin
-				data_RAM[writeAddress] <= writeData;
+				data_RAM[address] <= writeData;
 				readDataMem <= writeData;
 			end
 			// Send out the data at the address given if it is a read (not wr)
 			else begin
-				readDataMem <= data_RAM[writeAddress];
+				readDataMem <= data_RAM[address];
 			end
 		end
 	end
