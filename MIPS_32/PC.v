@@ -12,7 +12,6 @@ module PC(clk, index_in, index_out, rst);
 
 	input clk;
 	input rst;
-	input PCen;
 	input [(SIZE-1):0] index_in;
 	output reg [(SIZE-1):0] index_out;
 
