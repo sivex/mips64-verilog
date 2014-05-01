@@ -1,0 +1,9 @@
+[Inputs]
+=ALUOp[1:0]=
+=function_field[5:0]=
+[Outputs]
+=ALUCtrl[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ALU_Control
+

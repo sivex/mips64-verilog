@@ -1,0 +1,16 @@
+[Inputs]
+clk
+zero
+=inst[5:0]=
+[Outputs]
+ALUSrc
+PCSrc
+PCen
+MemWrite
+MemRead
+MemToReg
+=ALUOp[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel control_unit
+
