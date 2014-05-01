@@ -1,0 +1,13 @@
+[Inputs]
+readAddress
+memWrite
+memRead
+clk
+=writeAddress[31:0]=
+=writeData[31:0]=
+[Outputs]
+=readDataMem[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel data_MEM
+

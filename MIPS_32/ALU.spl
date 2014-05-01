@@ -1,0 +1,12 @@
+[Inputs]
+=ALUOp[3:0]=
+=a[31:0]=
+=b[31:0]=
+[Outputs]
+zero
+overflow
+=out[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ALU
+
