@@ -45,6 +45,24 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			MemToReg = 0;
 			ALUOp = 10;
 		end
+		else if (inst == 100011) begin
+			RegWrite = 1;
+			RegDst = 0;
+			ALUSrc = 1;
+			Branch = 0;
+			MemWrite = 0;
+			MemToReg = 1;
+			ALUOp = 2'b00;
 		end
+		else if (inst == 101011) begin
+			RegWrite = 0;
+			RegDst = 0;
+			ALUSrc = 1;
+			Branch = 0;
+			MemWrite = 1;
+			MemToReg = 0;
+			ALUOp = 2'b00;
+		end
+	end
 
 endmodule
