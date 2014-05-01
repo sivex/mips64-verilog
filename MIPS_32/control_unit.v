@@ -6,11 +6,10 @@
 // Module Name: control_unit
 // Description: Control unit for the 64 bit MIPS CPU
 ////////////////////////////////////////////////////////////////////////////////
-module control_unit(clk, inst, zero, ALUSrc, ALUOp,
-							PCSrc, PCen, MemWrite, MemRead, MemToReg);
+module control_unit(clk, inst, ALUSrc, ALUOp, MemWrite, MemRead, MemToReg, BranchEq, BranchNew, Jump);
 	input clk;
 	input [5:0] inst;
-	output RegDst, RegWrite, ALUSrc, PCSrc, PCen, MemWrite, MemRead, MemToReg, BranchEq, BranchNeq, Jump;
+	output reg RegDst, RegWrite, ALUSrc, MemWrite, MemRead, MemToReg, BranchEq, BranchNeq, Jump;
 	output [1:0] ALUOp;
 
 	// inst.	OPCODE	TYPE
@@ -25,7 +24,7 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 	// determine type of instruction
 	always @(posedge clk) begin
 	
-	RegDst=0;RegWrite=0;ALUSrc=0;MemWrite=0;MemRead=0;MemToReg=0;Branch=0;
+	RegDst=0;RegWrite=0;ALUSrc=0;MemWrite=0;MemRead=0;MemToReg=0;BranchEq=0;BranchNeq=0;
 		
 		//any R-type (add)
 		if(inst == 000000) begin
@@ -35,7 +34,6 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			MemWrite = 0;
 			MemToReg = 0;
 			RegDst = 1;
-			Branch = 0;
 		end
 		//addi
 		else if (inst == 001000) begin
@@ -51,7 +49,6 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			RegWrite = 1;
 			RegDst = 0;
 			ALUSrc = 1;
-			Branch = 0;
 			MemWrite = 0;
 			MemToReg = 1;
 			ALUOp = 2'b00;
@@ -61,7 +58,6 @@ module control_unit(clk, inst, zero, ALUSrc, ALUOp,
 			RegWrite = 0;
 			RegDst = 0;
 			ALUSrc = 1;
-			Branch = 0;
 			MemWrite = 1;
 			MemToReg = 0;
 			ALUOp = 2'b00;
