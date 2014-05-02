@@ -6,7 +6,7 @@
 // Module Name: sign_Extend
 // Description: Sign extends a value by given parameters
 ////////////////////////////////////////////////////////////////////////////////
-module sign_Extend(a, out);
+module sign_Extend(a, outE);
 
 	// Parameters for setting values
 	parameter SIZE_IN = 16;
@@ -14,9 +14,9 @@ module sign_Extend(a, out);
 
 	// Input and output set as given bit lengths defined in parameters
 	input [(SIZE_IN-1):0] a;
-	output [(SIZE_OUT-1):0] out;
+	output [(SIZE_OUT-1):0] outE;
 
 	// Concatenate / sign extend by the size in value
-	assign out = {{SIZE_IN{a[(SIZE_IN-1)]}}, a};
+	assign outE = {{SIZE_IN{a[(SIZE_IN-1)]}}, a};
 
 endmodule

@@ -1,7 +1,7 @@
 [Inputs]
 =a[15:0]=
 [Outputs]
-=out[31:0]=
+=outE[31:0]=
 [BiDir]
 [ATTRIBUTES]
 VeriModel sign_Extend

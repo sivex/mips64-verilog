@@ -5,7 +5,7 @@
 [Outputs]
 zero
 overflow
-=out[31:0]=
+=outCalc[31:0]=
 [BiDir]
 [ATTRIBUTES]
 VeriModel ALU

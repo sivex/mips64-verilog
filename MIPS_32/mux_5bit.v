@@ -6,14 +6,14 @@
 // Module Name: mux_5bit
 // Description: Multiplexer for 5 bit 2 input and 1 output
 ////////////////////////////////////////////////////////////////////////////////
-module mux_5bit(a, b, ctrl, out);
+module mux_5bit(a, b, ctrl, outM);
 
 	input [4:0] a, b;
 	input ctrl;
-	output [4:0] out;
+	output [4:0] outM;
 
-	// If ctrl = 1 -> a
-	// If ctrl = 0 -> b
-	assign out = (ctrl) ? a : b;
+	// If ctrl = 1 -> b
+	// If ctrl = 0 -> a
+	assign outM = (ctrl) ? b : a;
 
 endmodule

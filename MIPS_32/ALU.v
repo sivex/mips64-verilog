@@ -11,7 +11,7 @@
 //					3 - ADD	|	7 - NOR
 //					4 - SUB
 ////////////////////////////////////////////////////////////////////////////////
-module ALU(ALUOp, a, b, out, zero, overflow);
+module ALU(ALUOp, a, b, outCalc, zero, overflow);
 
 	// Parameterized input and output bit length
 	parameter SIZE = 32;
@@ -19,7 +19,7 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 	// Inputs and outputs
 	input [3:0] ALUOp;
 	input [(SIZE-1):0] a,b;
-	output reg [(SIZE-1):0] out;
+	output reg [(SIZE-1):0] outCalc;
 	output reg overflow;
 	output zero;
 
@@ -27,30 +27,30 @@ module ALU(ALUOp, a, b, out, zero, overflow);
 	//reg [(SIZE-1):0] high_mult;
 
 	// Assign true if out is 0
-	assign zero = (out == 0);
+	assign zero = (outCalc == 0);
 
 	// Cases for ALU
 	always @(ALUOp, a, b) begin
 		case (ALUOp)
 			4'b0000: begin
 				// AND
-				out <= a & b;
+				outCalc <= a & b;
 			end
 			4'b0001: begin
 				// OR
-				out <= a | b;
+				outCalc <= a | b;
 			end
 			4'b0010: begin
 				// ADD
-				{overflow,out} <= a + b;
+				{overflow,outCalc} <= a + b;
 			end
 			4'b0110: begin
 				// SUB
-				{overflow,out} <= a - b;
+				{overflow,outCalc} <= a - b;
 			end
 			default: begin
 				// Default to 0 (should not happen)
-				out <= 0;
+				outCalc <= 0;
 			end
 		endcase
 	end

@@ -6,7 +6,7 @@
 // Module Name: shifter
 // Description: Shifts the bit stream by a parameter value
 ////////////////////////////////////////////////////////////////////////////////
-module shifter(a, out);
+module shifter(a, outS);
 
 	// Parameters for setting values
 	parameter SIZE = 32;
@@ -14,9 +14,9 @@ module shifter(a, out);
 
 	// input and output same bit length
 	input [(SIZE-1):0] a;
-	output [(SIZE-1):0] out;
+	output [(SIZE-1):0] outS;
 
 	// shift left by given value
-	assign out = a << SHIFT_N;
+	assign outS = a << SHIFT_N;
 
 endmodule

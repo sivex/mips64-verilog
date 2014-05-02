@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<symbol version="7" name="sign_Extend">
+<symbol version="7" name="shifter">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-5-2T20:10:10</timestamp>
-    <attr value="sign_Extend" name="VeriModel" />
-    <pin polarity="Input" x="0" y="-32" name="a(15:0)" />
-    <pin polarity="Output" x="384" y="32" name="outE(31:0)" />
+    <timestamp>2014-5-2T20:17:6</timestamp>
+    <attr value="shifter" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-32" name="a(31:0)" />
+    <pin polarity="Output" x="384" y="32" name="outS(31:0)" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-72" type="symbol" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin a(15:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="32" type="pin outE(31:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin a(31:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="32" type="pin outS(31:0)" />
         <rect width="64" x="320" y="20" height="24" />
         <line x2="384" y1="32" y2="32" x1="320" />
         <rect width="64" x="0" y="-44" height="24" />

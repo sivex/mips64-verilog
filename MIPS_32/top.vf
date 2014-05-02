@@ -1,0 +1,133 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : top.vf
+// /___/   /\     Timestamp : 05/02/2014 16:22:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/top.vf -w C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/top.sch
+//Design Name: top
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module top(clk, 
+           rst);
+
+    input clk;
+    input rst;
+   
+   wire [31:0] Instruction;
+   wire MemRead;
+   wire MemToReg;
+   wire MemWrite;
+   wire [31:0] readData1;
+   wire [31:0] XLXN_22;
+   wire [31:0] XLXN_23;
+   wire [31:0] XLXN_31;
+   wire [31:0] XLXN_51;
+   wire XLXN_81;
+   wire [31:0] XLXN_88;
+   wire [31:0] XLXN_89;
+   wire [31:0] XLXN_90;
+   wire [31:0] XLXN_91;
+   wire [31:0] XLXN_100;
+   wire XLXN_114;
+   wire XLXN_117;
+   wire XLXN_118;
+   wire XLXN_120;
+   wire XLXN_121;
+   wire XLXN_129;
+   wire XLXN_134;
+   wire [4:0] XLXN_136;
+   wire [31:0] XLXN_137;
+   wire [3:0] XLXN_139;
+   wire [1:0] XLXN_141;
+   wire [31:0] XLXN_150;
+   
+   instruction_MEM  XLXI_1 (.clk(clk), 
+                           .index(XLXN_89[31:0]), 
+                           .instruction(Instruction[31:0]));
+   PC  XLXI_2 (.clk(clk), 
+              .index_in(XLXN_100[31:0]), 
+              .rst(rst), 
+              .index_out(XLXN_89[31:0]));
+   registers  XLXI_3 (.clk(clk), 
+                     .readReg1(Instruction[25:21]), 
+                     .readReg2(Instruction[20:16]), 
+                     .regWrite(), 
+                     .writeData(XLXN_137[31:0]), 
+                     .writeReg(XLXN_136[4:0]), 
+                     .readData1(readData1[31:0]), 
+                     .readData2(XLXN_31[31:0]));
+   mux_5bit  XLXI_4 (.a(Instruction[20:16]), 
+                    .b(Instruction[15:11]), 
+                    .ctrl(), 
+                    .outM(XLXN_136[4:0]));
+   sign_Extend  XLXI_5 (.a(Instruction[15:0]), 
+                       .outE(XLXN_88[31:0]));
+   mux_32bit  XLXI_6 (.a(XLXN_31[31:0]), 
+                     .b(XLXN_88[31:0]), 
+                     .ctrl(XLXN_81), 
+                     .outM(XLXN_51[31:0]));
+   ALU  XLXI_7 (.a(readData1[31:0]), 
+               .ALUOp(XLXN_139[3:0]), 
+               .b(XLXN_51[31:0]), 
+               .outCalc(XLXN_23[31:0]), 
+               .overflow(), 
+               .zero(XLXN_129));
+   data_MEM  XLXI_8 (.address(XLXN_23[31:0]), 
+                    .clk(clk), 
+                    .memRead(MemRead), 
+                    .memWrite(MemWrite), 
+                    .writeData(XLXN_31[31:0]), 
+                    .readDataMem(XLXN_22[31:0]));
+   mux_32bit  XLXI_9 (.a(XLXN_22[31:0]), 
+                     .b(XLXN_23[31:0]), 
+                     .ctrl(MemToReg), 
+                     .outM(XLXN_137[31:0]));
+   ALU_Control  XLXI_10 (.ALUOp(XLXN_141[1:0]), 
+                        .function_field(Instruction[5:0]), 
+                        .ALUCtrl(XLXN_139[3:0]));
+   control_unit  XLXI_11 (.clk(clk), 
+                         .inst(Instruction[31:26]), 
+                         .zero(), 
+                         .ALUOp(XLXN_141[1:0]), 
+                         .ALUSrc(XLXN_81), 
+                         .MemRead(MemRead), 
+                         .MemToReg(MemToReg), 
+                         .MemWrite(MemWrite), 
+                         .PCen(), 
+                         .PCSrc());
+   shifter  XLXI_12 (.a(XLXN_88[31:0]), 
+                    .outS(XLXN_91[31:0]));
+   add_One  XLXI_13 (.a(XLXN_89[31:0]), 
+                    .outA(XLXN_90[31:0]));
+   adder  XLXI_14 (.a(XLXN_90[31:0]), 
+                  .b(XLXN_91[31:0]), 
+                  .outA(XLXN_150[31:0]));
+   mux_32bit  XLXI_15 (.a(XLXN_90[31:0]), 
+                      .b(XLXN_150[31:0]), 
+                      .ctrl(XLXN_114), 
+                      .outM(XLXN_100[31:0]));
+   OR2  XLXI_19 (.I0(XLXN_118), 
+                .I1(XLXN_117), 
+                .O(XLXN_114));
+   AND2  XLXI_23 (.I0(XLXN_134), 
+                 .I1(XLXN_121), 
+                 .O(XLXN_117));
+   AND2  XLXI_24 (.I0(XLXN_129), 
+                 .I1(XLXN_120), 
+                 .O(XLXN_118));
+   INV  XLXI_26 (.I(XLXN_129), 
+                .O(XLXN_134));
+endmodule
