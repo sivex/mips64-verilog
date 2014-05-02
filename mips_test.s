@@ -7,7 +7,7 @@
 # - lw   ___
 # - sw   _x_
 
-# 'Compiled' code is in `instructions.txt`
+# 'Compiled' code is in `MIPS_32/instructions.txt`
 
 # Code goes here
 .text
