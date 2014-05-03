@@ -6,11 +6,11 @@
 // Module Name: control_unit
 // Description: Control unit for the 64 bit MIPS CPU
 ////////////////////////////////////////////////////////////////////////////////
-module control_unit(clk, inst, ALUSrc, ALUOp, MemWrite, MemRead, MemToReg, BranchEq, BranchNeq, Jump);
+module control_unit(clk, inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, MemToReg, BranchEq, BranchNeq, Jump);
 	input clk;
 	input [5:0] inst;
 	output reg RegDst, RegWrite, ALUSrc, MemWrite, MemRead, MemToReg, BranchEq, BranchNeq, Jump;
-	output [1:0] ALUOp;
+	output reg [1:0] ALUOp;
 
 	// inst.	OPCODE	TYPE
 	// add 	100000	R

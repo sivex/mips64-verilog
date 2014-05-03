@@ -7,7 +7,7 @@
 // \   \   \/     Version : 13.2
 //  \   \         Application : sch2hdl
 //  /   /         Filename : top.vf
-// /___/   /\     Timestamp : 05/02/2014 16:22:23
+// /___/   /\     Timestamp : 05/03/2014 13:25:48
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -44,8 +44,6 @@ module top(clk,
    wire XLXN_114;
    wire XLXN_117;
    wire XLXN_118;
-   wire XLXN_120;
-   wire XLXN_121;
    wire XLXN_129;
    wire XLXN_134;
    wire [4:0] XLXN_136;
@@ -53,6 +51,10 @@ module top(clk,
    wire [3:0] XLXN_139;
    wire [1:0] XLXN_141;
    wire [31:0] XLXN_150;
+   wire XLXN_151;
+   wire XLXN_152;
+   wire XLXN_154;
+   wire XLXN_162;
    
    instruction_MEM  XLXI_1 (.clk(clk), 
                            .index(XLXN_89[31:0]), 
@@ -64,14 +66,14 @@ module top(clk,
    registers  XLXI_3 (.clk(clk), 
                      .readReg1(Instruction[25:21]), 
                      .readReg2(Instruction[20:16]), 
-                     .regWrite(), 
+                     .regWrite(XLXN_152), 
                      .writeData(XLXN_137[31:0]), 
                      .writeReg(XLXN_136[4:0]), 
                      .readData1(readData1[31:0]), 
                      .readData2(XLXN_31[31:0]));
    mux_5bit  XLXI_4 (.a(Instruction[20:16]), 
                     .b(Instruction[15:11]), 
-                    .ctrl(), 
+                    .ctrl(XLXN_151), 
                     .outM(XLXN_136[4:0]));
    sign_Extend  XLXI_5 (.a(Instruction[15:0]), 
                        .outE(XLXN_88[31:0]));
@@ -100,14 +102,16 @@ module top(clk,
                         .ALUCtrl(XLXN_139[3:0]));
    control_unit  XLXI_11 (.clk(clk), 
                          .inst(Instruction[31:26]), 
-                         .zero(), 
                          .ALUOp(XLXN_141[1:0]), 
                          .ALUSrc(XLXN_81), 
+                         .BranchEq(XLXN_154), 
+                         .BranchNeq(XLXN_162), 
+                         .Jump(), 
                          .MemRead(MemRead), 
                          .MemToReg(MemToReg), 
                          .MemWrite(MemWrite), 
-                         .PCen(), 
-                         .PCSrc());
+                         .RegDst(XLXN_151), 
+                         .RegWrite(XLXN_152));
    shifter  XLXI_12 (.a(XLXN_88[31:0]), 
                     .outS(XLXN_91[31:0]));
    add_One  XLXI_13 (.a(XLXN_89[31:0]), 
@@ -123,10 +127,10 @@ module top(clk,
                 .I1(XLXN_117), 
                 .O(XLXN_114));
    AND2  XLXI_23 (.I0(XLXN_134), 
-                 .I1(XLXN_121), 
+                 .I1(XLXN_162), 
                  .O(XLXN_117));
    AND2  XLXI_24 (.I0(XLXN_129), 
-                 .I1(XLXN_120), 
+                 .I1(XLXN_154), 
                  .O(XLXN_118));
    INV  XLXI_26 (.I(XLXN_129), 
                 .O(XLXN_134));
