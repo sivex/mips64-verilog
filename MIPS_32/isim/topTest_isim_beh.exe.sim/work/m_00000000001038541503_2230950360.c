@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "ReadDataMem \t= %b ALUa \t= %b ALUb \t= %b";
+static const char *ng0 = "ReadDataMem =\t%b ALUa =\t%b ALUb =\t%b";
 static const char *ng1 = "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest.v";
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
@@ -148,7 +148,6 @@ static void Initial_48_2(char *t0)
     char *t1;
     char *t2;
     char *t3;
-    char *t4;
 
 LAB0:    t1 = (t0 + 3096U);
     t2 = *((char **)t1);
@@ -164,29 +163,19 @@ LAB4:    xsi_set_current_line(50, ng1);
     t3 = (t0 + 1768);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(51, ng1);
-    t2 = ((char*)((ng2)));
-    t3 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(54, ng1);
-    t2 = (t0 + 2904);
-    xsi_process_wait(t2, 100000LL);
-    *((char **)t1) = &&LAB5;
-
-LAB1:    return;
-LAB5:    xsi_set_current_line(57, ng1);
     t2 = ((char*)((ng3)));
     t3 = (t0 + 1928);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(58, ng1);
+    xsi_set_current_line(52, ng1);
     t2 = (t0 + 2904);
-    xsi_process_wait(t2, 6000LL);
-    *((char **)t1) = &&LAB6;
-    goto LAB1;
+    xsi_process_wait(t2, 1000LL);
+    *((char **)t1) = &&LAB5;
 
-LAB6:    xsi_set_current_line(59, ng1);
-    t3 = ((char*)((ng2)));
-    t4 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t4, t3, 0, 0, 1);
+LAB1:    return;
+LAB5:    xsi_set_current_line(53, ng1);
+    t2 = ((char*)((ng2)));
+    t3 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     goto LAB1;
 
 }

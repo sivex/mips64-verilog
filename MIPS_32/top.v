@@ -90,8 +90,7 @@ module top( clk ,rst, readDataMem, ALUa, ALUb
 		 
 	// Instantiate the control unit
 	control_unit controlUnit (
-		 .clk(clk), 
-		 .inst(instruction[5:0]), 
+		 .inst(instruction[31:26]), 
 		 .RegDst(regDst), 
 		 .RegWrite(regWrite), 
 		 .ALUSrc(ALUSrc), 
@@ -127,7 +126,7 @@ module top( clk ,rst, readDataMem, ALUa, ALUb
 
 		// Instantiate the PC increment 
 	add_One programCounterIncrement (
-		 .a(instruction), 
+		 .a(pcOut), 
 		 .outA(noBranchInstruction)
 		 );
 
@@ -143,11 +142,12 @@ module top( clk ,rst, readDataMem, ALUa, ALUb
 		 .b(shiftOut), 
 		 .outA(branchAddress)
 		 );
-	// Instantiate the multiplexer
+		 
+	// Instantiate the branch multiplexer
 	mux_32bit branchMux (
 		 .a(noBranchInstruction), 
 		 .b(branchAddress), 
-		 .ctrl(branchCtrl), 
+		 .ctrl(1'b0), // branchCtrl was removed for testing without branch controls
 		 .outM(pcIn)
 		 );
 
@@ -201,8 +201,8 @@ module top( clk ,rst, readDataMem, ALUa, ALUb
 
 	// Instantiate the memory to register Mux
 	mux_32bit memToRegMux (
-		 .a(readDataMem), 
-		 .b(ALUOutput), 
+		 .a(ALUOutput), 
+		 .b(readDataMem), 
 		 .ctrl(memToReg), 
 		 .outM(writeData)
 		 );

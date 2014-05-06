@@ -26,10 +26,11 @@ static unsigned int ng1[] = {0U, 0U};
 static unsigned int ng2[] = {2U, 0U};
 static unsigned int ng3[] = {1U, 0U};
 static unsigned int ng4[] = {6U, 0U};
-static unsigned int ng5[] = {4U, 0U};
-static unsigned int ng6[] = {5U, 0U};
-static unsigned int ng7[] = {14U, 0U};
-static unsigned int ng8[] = {15U, 0U};
+static unsigned int ng5[] = {32U, 0U};
+static unsigned int ng6[] = {4U, 0U};
+static unsigned int ng7[] = {5U, 0U};
+static unsigned int ng8[] = {14U, 0U};
+static unsigned int ng9[] = {15U, 0U};
 
 
 
@@ -84,7 +85,7 @@ LAB10:    t2 = ((char*)((ng2)));
 LAB12:
 LAB14:
 LAB13:    xsi_set_current_line(32, ng0);
-    t2 = ((char*)((ng8)));
+    t2 = ((char*)((ng9)));
     t3 = (t0 + 1608);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 4, 0LL);
 
@@ -108,7 +109,7 @@ LAB16:    xsi_set_current_line(24, ng0);
     t3 = (t0 + 1208U);
     t4 = *((char **)t3);
 
-LAB17:    t3 = ((char*)((ng1)));
+LAB17:    t3 = ((char*)((ng5)));
     t9 = xsi_vlog_unsigned_case_compare(t4, 6, t3, 6);
     if (t9 == 1)
         goto LAB18;
@@ -118,12 +119,12 @@ LAB19:    t2 = ((char*)((ng2)));
     if (t6 == 1)
         goto LAB20;
 
-LAB21:    t2 = ((char*)((ng5)));
+LAB21:    t2 = ((char*)((ng6)));
     t6 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
     if (t6 == 1)
         goto LAB22;
 
-LAB23:    t2 = ((char*)((ng6)));
+LAB23:    t2 = ((char*)((ng7)));
     t6 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
     if (t6 == 1)
         goto LAB24;
@@ -131,7 +132,7 @@ LAB23:    t2 = ((char*)((ng6)));
 LAB25:
 LAB27:
 LAB26:    xsi_set_current_line(29, ng0);
-    t2 = ((char*)((ng7)));
+    t2 = ((char*)((ng8)));
     t3 = (t0 + 1608);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 4, 0LL);
 

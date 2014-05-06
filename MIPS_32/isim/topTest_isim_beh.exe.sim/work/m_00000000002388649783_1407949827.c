@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/instruction_MEM.v";
-static const char *ng1 = "instructions.txt";
+static const char *ng1 = "instructionsTest.txt";
 
 
 

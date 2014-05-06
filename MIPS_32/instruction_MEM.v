@@ -24,7 +24,7 @@ module instruction_MEM(index, instruction, clk);
 	reg [(DATA_BITS-1):0] instruction_RAM [(IMEM_SIZE-1):0];
 
 	initial begin
-		$readmemb("instructions.txt", instruction_RAM);
+		$readmemb("instructionsTest.txt", instruction_RAM); // edited
 	end
 
 	// Output instruction at given index on positive edge

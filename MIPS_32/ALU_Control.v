@@ -17,12 +17,12 @@ module ALU_Control(
 	 always @ (ALUOp or function_field) begin
 	 
 	 case(ALUOp)
-		2'b00: ALUCtrl <= 4'b0010; //add
+		2'b00: ALUCtrl <= 4'b0010; //addi
 		2'b01: ALUCtrl <= 4'b0110; //subtract
 		2'b10:
 		begin
-			case(function_field)
-				6'b000000: ALUCtrl <= 4'b0010; //add
+			case(function_field) //R-Type
+				6'b100000: ALUCtrl <= 4'b0010; //add // changed from 0000000 5/6/14 6:32
 				6'b000010: ALUCtrl <= 4'b0110; //subtract
 				6'b000100: ALUCtrl <= 4'b0000; //AND
 				6'b000101: ALUCtrl <= 4'b0001; //OR

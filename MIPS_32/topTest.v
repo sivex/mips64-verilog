@@ -42,21 +42,22 @@ module topTest;
 	always begin
 		#1
 		clk = ~clk;
-		$monitor("ReadDataMem \t= %b ALUa \t= %b ALUb \t= %b",readDataMem, ALUa, ALUb);
+		$monitor("ReadDataMem =\t%b ALUa =\t%b ALUb =\t%b",readDataMem, ALUa, ALUb);
 		end
 
 	initial begin
 		// Initialize Inputs
 		clk = 0;
+		rst = 1;
+		#1;
 		rst = 0;
-
 		// Wait 100 ns for global reset to finish
-		#100;
+		//#100;
         
 		// Add stimulus here
-		rst = 1;
-		#6
-		rst = 0;
+		//rst = 1;
+		//#6
+		//rst = 0;
 		
 		
 		

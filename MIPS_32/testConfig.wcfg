@@ -10,18 +10,21 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/topTest/readDataMem" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">readDataMem[31:0]</obj_property>
       <obj_property name="ObjectShortName">readDataMem[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/topTest/ALUa" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">ALUa[31:0]</obj_property>
       <obj_property name="ObjectShortName">ALUa[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/topTest/ALUb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">ALUb[31:0]</obj_property>
       <obj_property name="ObjectShortName">ALUb[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/topTest/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -31,8 +34,65 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/topTest/uut/programCounter/index_in" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">index_in[31:0]</obj_property>
-      <obj_property name="ObjectShortName">index_in[31:0]</obj_property>
+   <wvobject fp_name="/topTest/uut/instructionMemory/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/registersModule/REGISTERS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">REGISTERS[31:0,31:0]</obj_property>
+      <obj_property name="ObjectShortName">REGISTERS[31:0,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/registersModule/readReg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">readReg1[25:21]</obj_property>
+      <obj_property name="ObjectShortName">readReg1[25:21]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/registersModule/readReg2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">readReg2[20:16]</obj_property>
+      <obj_property name="ObjectShortName">readReg2[20:16]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/registersModule/writeReg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">writeReg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">writeReg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/registersModule/writeData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">writeData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writeData[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/ALUSrcMux/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/ALUSrcMux/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/ALUSrcMux/ctrl" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrl</obj_property>
+      <obj_property name="ObjectShortName">ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/ALUSrcMux/outM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outM[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/controlUnit/ALUSrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/controlUnit/inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst[5:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/ArithmeticLogicUnit/outCalc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outCalc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outCalc[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/ALUControl/ALUCtrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUCtrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUCtrl[3:0]</obj_property>
    </wvobject>
 </wave_config>
