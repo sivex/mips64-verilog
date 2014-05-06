@@ -2,9 +2,9 @@
 
 
 // Instantiate the module
-sign_Extend instance_name (
+add_One instance_name (
     .a(a), 
-    .outE(outE)
+    .outA(outA)
     );
 
 

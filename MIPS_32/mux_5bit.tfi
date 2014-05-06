@@ -6,7 +6,7 @@ mux_5bit instance_name (
     .a(a), 
     .b(b), 
     .ctrl(ctrl), 
-    .out(out)
+    .outM(outM)
     );
 
 

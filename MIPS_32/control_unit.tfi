@@ -5,16 +5,16 @@
 control_unit instance_name (
     .clk(clk), 
     .inst(inst), 
-    .zero(zero), 
     .RegDst(RegDst), 
     .RegWrite(RegWrite), 
     .ALUSrc(ALUSrc), 
     .ALUOp(ALUOp), 
-    .PCSrc(PCSrc), 
-    .PCen(PCen), 
     .MemWrite(MemWrite), 
     .MemRead(MemRead), 
-    .MemToReg(MemToReg)
+    .MemToReg(MemToReg), 
+    .BranchEq(BranchEq), 
+    .BranchNeq(BranchNeq), 
+    .Jump(Jump)
     );
 
 

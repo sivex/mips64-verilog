@@ -9,7 +9,8 @@ registers instance_name (
     .writeData(writeData), 
     .readData1(readData1), 
     .readData2(readData2), 
-    .regWrite(regWrite)
+    .regWrite(regWrite), 
+    .clk(clk)
     );
 
 

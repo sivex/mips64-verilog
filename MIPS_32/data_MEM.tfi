@@ -3,10 +3,9 @@
 
 // Instantiate the module
 data_MEM instance_name (
-    .readAddress(readAddress), 
-    .writeAddress(writeAddress), 
+    .address(address), 
     .writeData(writeData), 
-    .readData(readData), 
+    .readDataMem(readDataMem), 
     .memWrite(memWrite), 
     .memRead(memRead), 
     .clk(clk)

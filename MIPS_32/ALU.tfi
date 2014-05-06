@@ -6,7 +6,7 @@ ALU instance_name (
     .ALUOp(ALUOp), 
     .a(a), 
     .b(b), 
-    .out(out), 
+    .outCalc(outCalc), 
     .zero(zero), 
     .overflow(overflow)
     );

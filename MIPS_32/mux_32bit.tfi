@@ -2,10 +2,11 @@
 
 
 // Instantiate the module
-adder instance_name (
+mux_32bit instance_name (
     .a(a), 
     .b(b), 
-    .outA(outA)
+    .ctrl(ctrl), 
+    .outM(outM)
     );
 
 
