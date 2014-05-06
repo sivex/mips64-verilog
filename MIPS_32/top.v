@@ -72,6 +72,10 @@ module top( clk ,rst
 	// data memory output
 	wire [31:0] readDataMem;
 	
+	assign and2 = (zero & branchEq);
+	assign and1 = ((!zero) & branchNeq);
+	assign branchCtrl = (and1 | and2);
+	
 	// module declarations /////////////////////////////////////
 	//
 	// Instantiate the program counter
