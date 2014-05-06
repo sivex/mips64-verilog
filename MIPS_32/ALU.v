@@ -17,7 +17,7 @@ module ALU(ALUOp, a, b, outCalc, zero, overflow);
 	parameter SIZE = 32;
 
 	// Inputs and outputs
-	input [3:0] ALUOp;
+	input [3:0] ALUOp; // ALUCTRL
 	input [(SIZE-1):0] a,b;
 	output reg [(SIZE-1):0] outCalc;
 	output reg overflow;

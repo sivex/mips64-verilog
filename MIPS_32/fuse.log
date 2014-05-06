@@ -1,0 +1,45 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.exe" -prj "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest_beh.prj" "work.topTest" "work.glbl" 
+ISim O.61xd (signature 0x1cce1bb2)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/sign_Extend.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/shifter.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/registers.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/PC.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/mux_5bit.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/mux_32bit.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/instruction_MEM.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/data_MEM.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/control_unit.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/ALU_Control.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/ALU.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/add_One.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/adder.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/top.v\" into library work
+Analyzing Verilog file \"C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC
+Compiling module control_unit
+Compiling module instruction_MEM
+Compiling module mux_5bit
+Compiling module sign_Extend
+Compiling module add_One
+Compiling module shifter
+Compiling module adder
+Compiling module mux_32bit
+Compiling module ALU_Control
+Compiling module ALU
+Compiling module registers
+Compiling module data_MEM
+Compiling module top
+Compiling module topTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.exe
+Fuse Memory Usage: 16648 KB
+Fuse CPU Usage: 561 ms

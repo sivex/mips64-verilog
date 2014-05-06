@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module top( clk ,rst
+module top( clk ,rst, readDataMem, ALUa, ALUb
     );
 
 	input clk,rst;
@@ -55,11 +55,11 @@ module top( clk ,rst
 	wire [3:0] ALUCtrl; 
 	
 	// register outputs
-	wire [31:0] ALUa; // readData1
+	output [31:0] ALUa; // readData1
 	wire [31:0] readData2; // readData2
 	
 	// alu source mux outputs
-	wire [31:0] ALUb;
+	output [31:0] ALUb;
 	
 	// ALU Output
 	wire [31:0] ALUOutput;
@@ -70,11 +70,12 @@ module top( clk ,rst
 	wire [31:0] writeData;
 	
 	// data memory output
-	wire [31:0] readDataMem;
+	output [31:0] readDataMem;
 	
 	assign and2 = (zero & branchEq);
 	assign and1 = ((!zero) & branchNeq);
 	assign branchCtrl = (and1 | and2);
+	
 	
 	// module declarations /////////////////////////////////////
 	//
@@ -160,7 +161,7 @@ module top( clk ,rst
 
 	// Instantiate the ALU
 	ALU ArithmeticLogicUnit (
-		 .ALUOp(ALUOp), 
+		 .ALUOp(ALUCtrl), 
 		 .a(ALUa), 
 		 .b(ALUb), 
 		 .outCalc(ALUOutput), 
