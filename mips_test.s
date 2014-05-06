@@ -2,9 +2,9 @@
 # - add  _x_
 # - addi _x_
 # - beq  ___
-# - bne  ___
-# - jmp  ___
-# - lw   ___
+# - bne  _x_
+# - j    ___
+# - lw   _x_
 # - sw   _x_
 
 # 'Compiled' code is in `MIPS_32/instructions.txt`
@@ -38,3 +38,36 @@
   # BINARY: 101011 00000 10010 0000000000000000
   #         SW     0     18    0
   #         opcode base  rt    offset
+
+# -----------------------------------------------------------------------------
+#   instructions.txt ends here
+# ----------------------------------------------------------------------------
+
+    add  $s3, $zero, $zero
+  # add   rd,    rs,    rt
+  # rd <- rs + rt
+  # BINARY: 000000 00000 00000 10011 00000 100000
+  #         SPEC   0     0     19    0     ADD
+  #         opcode rs    rt    rd    shamt funct
+
+    lw   $s4, 0(0)
+  # lw    rt, offset(base)
+  # rt <- memory[base + offset]
+  # BINARY: 100011 00000 10100 0000000000000000
+  #         LW     0     20    0
+  #         opcode base  rt    offset
+
+  while:
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
+
+    bne  $s3, $s4, while
+  # bne   rs,  rt, offset
+  # if rs != rt then branch
+  # BINARY: 000101 10011 10100 1111111111111111
+  #         BNE    19    20    -1
+  #         opcode rs    rt    offset
