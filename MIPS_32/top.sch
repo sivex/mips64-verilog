@@ -42,11 +42,6 @@
         <signal name="XLXN_151" />
         <signal name="XLXN_152" />
         <signal name="XLXN_154" />
-        <signal name="XLXN_155" />
-        <signal name="XLXN_157" />
-        <signal name="XLXN_159" />
-        <signal name="XLXN_160" />
-        <signal name="XLXN_161" />
         <signal name="XLXN_162" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="rst" />

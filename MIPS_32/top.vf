@@ -7,11 +7,11 @@
 // \   \   \/     Version : 13.2
 //  \   \         Application : sch2hdl
 //  /   /         Filename : top.vf
-// /___/   /\     Timestamp : 05/03/2014 15:54:06
+// /___/   /\     Timestamp : 05/06/2014 13:19:55
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/top.vf -w C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/top.sch
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/aaron_win7/Documents/GitHub/mips64-verilog/MIPS_32/top.vf -w C:/Users/aaron_win7/Documents/GitHub/mips64-verilog/MIPS_32/top.sch
 //Design Name: top
 //Device: spartan3e
 //Purpose:
