@@ -19,13 +19,13 @@ module ALU_Control(
 	 case(ALUOp)
 		2'b00: ALUCtrl <= 4'b0010; //add
 		2'b01: ALUCtrl <= 4'b0110; //subtract
-		2'b1?:
+		2'b10:
 		begin
 			case(function_field)
-				6'b??0000: ALUCtrl <= 4'b0010; //add
-				6'b??0010: ALUCtrl <= 4'b0110; //subtract
-				6'b??0100: ALUCtrl <= 4'b0000; //AND
-				6'b??0101: ALUCtrl <= 4'b0001; //OR
+				6'b000000: ALUCtrl <= 4'b0010; //add
+				6'b000010: ALUCtrl <= 4'b0110; //subtract
+				6'b000100: ALUCtrl <= 4'b0000; //AND
+				6'b000101: ALUCtrl <= 4'b0001; //OR
 				default: ALUCtrl <= 4'b1110; //error checking
 			endcase
 		end

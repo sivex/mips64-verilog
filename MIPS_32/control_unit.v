@@ -42,7 +42,7 @@ module control_unit(clk, inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRea
 			ALUSrc = 1;
 			MemWrite = 0;
 			MemToReg = 0;
-			ALUOp = 10;
+			ALUOp = 2'b10;
 		end
 		//lw
 		else if (inst == 100011) begin
