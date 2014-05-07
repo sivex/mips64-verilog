@@ -62,7 +62,7 @@ module control_unit( inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, M
 			MemToReg = 0;
 			ALUOp = 2'b00;
 		end
-		//br
+		//branch if equal
 		else if (inst == 6'b000100) begin // not correct
 			RegWrite = 0;
 			RegDst = 0;
@@ -80,8 +80,15 @@ module control_unit( inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, M
 			MemToReg = 0;
 			ALUOp = 2'b00;
 		end
-		//
-		
+		//jmp 
+		else if(inst == 6'b000010) begin // not correct
+			RegWrite = 0;
+			RegDst = 0;
+			ALUSrc = 1;
+			MemWrite = 1;
+			MemToReg = 0;
+			ALUOp = 2'b00;
+		end
 	end
 
 endmodule
