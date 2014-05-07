@@ -56,7 +56,14 @@
 # -----------------------------------------------------------------------------
 #   instructionsTest.txt ends here
 # -----------------------------------------------------------------------------
-  while:
+
+    bne  $s3, $s4, jumpA
+  # bne   rs,  rt, offset
+  # if rs != rt then branch
+  # BINARY: 000101 10011 10100 0000000000000100
+  #         BNE    19    20    -1
+  #         opcode rs    rt    offset
+
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -64,9 +71,20 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
-    bne  $s3, $s4, while
-  # bne   rs,  rt, offset
-  # if rs != rt then branch
-  # BINARY: 000101 10011 10100 1111111111111111
-  #         BNE    19    20    -1
-  #         opcode rs    rt    offset
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
+
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
+
+jumpA:
+
+
