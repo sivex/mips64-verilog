@@ -24,7 +24,7 @@ module control_unit( inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, M
 	// determine type of instruction
 	always@* begin //  changes at input change
 	
-	RegDst=0;RegWrite=0;ALUSrc=0;MemWrite=0;MemRead=0;MemToReg=0;BranchEq=0;BranchNeq=0;
+	RegDst=0;RegWrite=0;ALUSrc=0;MemWrite=0;MemRead=0;MemToReg=0;BranchEq=0;BranchNeq=0;Jump=0;
 		
 		//any R-type (add)
 		if(inst == 6'b000000) begin
@@ -66,28 +66,25 @@ module control_unit( inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, M
 		else if (inst == 6'b000100) begin // not correct
 			RegWrite = 0;
 			RegDst = 0;
-			ALUSrc = 1;
-			MemWrite = 1;
+			ALUSrc = 0;
+			MemWrite = 0;
 			MemToReg = 0;
-			ALUOp = 2'b00;
+			ALUOp = 2'b01;
+			BranchEq = 1;
 		end
 		//bne
 		else if(inst == 6'b000101) begin // not correct
 			RegWrite = 0;
 			RegDst = 0;
-			ALUSrc = 1;
-			MemWrite = 1;
+			ALUSrc = 0;
+			MemWrite = 0;
 			MemToReg = 0;
-			ALUOp = 2'b00;
+			ALUOp = 2'b01;
+			BranchNeq = 1;
 		end
 		//jmp 
 		else if(inst == 6'b000010) begin // not correct
-			RegWrite = 0;
-			RegDst = 0;
-			ALUSrc = 1;
-			MemWrite = 1;
-			MemToReg = 0;
-			ALUOp = 2'b00;
+			Jump = 1;
 		end
 	end
 
