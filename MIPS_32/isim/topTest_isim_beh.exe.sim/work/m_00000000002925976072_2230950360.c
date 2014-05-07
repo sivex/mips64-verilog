@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "Cycle = %d,\t Instruction = %b,\t ALU_a = %d,\t ALU_b =%d,\t Data_out =%d,\t Data_mem =%d";
-static const char *ng1 = "C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest.v";
+static const char *ng1 = "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest.v";
 static unsigned int ng2[] = {1U, 0U};
 static int ng3[] = {1, 0};
 static int ng4[] = {0, 0};

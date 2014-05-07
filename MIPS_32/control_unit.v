@@ -29,7 +29,7 @@ module control_unit( inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, M
 		//any R-type (add)
 		if(inst == 6'b000000) begin
 			ALUSrc = 0;
-			RegWrite = 0;
+			RegWrite = 1;
 			ALUOp = 2'b10;
 			MemWrite = 0;
 			MemToReg = 0;
