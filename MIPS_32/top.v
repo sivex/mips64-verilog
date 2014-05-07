@@ -72,9 +72,15 @@ module top( clk ,rst, readDataMem, ALUa, ALUb, writeData, instruction
 	// data memory output
 	output [31:0] readDataMem;
 	
+	// branch logic
 	assign and2 = (zero & branchEq);
 	assign and1 = ((!zero) & branchNeq);
 	assign branchCtrl = (and1 | and2);
+	
+	// jump logic
+	wire [31:0] jumpAddress;
+	assign jumpAddress = {{noBranchInstruction[31:26]},{instruction[25:0]}};
+	wire [31:0] branchOut;
 	
 	
 	// module declarations /////////////////////////////////////
@@ -148,9 +154,16 @@ module top( clk ,rst, readDataMem, ALUa, ALUb, writeData, instruction
 		 .a(noBranchInstruction), 
 		 .b(branchAddress), 
 		 .ctrl(1'b0), // branchCtrl was removed for testing without branch controls
-		 .outM(pcIn)
+		 .outM(branchOut)
 		 );
 
+	// Instantiate the module
+	mux_32bit jumpMux (
+		 .a(branchOut), 
+		 .b(jumpAddress), 
+		 .ctrl(jump), 
+		 .outM(pcIn)
+		 );
 
 		// Instantiate the ALU control
 	ALU_Control ALUControl (
