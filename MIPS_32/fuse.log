@@ -38,8 +38,8 @@ Compiling module top
 Compiling module topTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 9 sub-compilation(s) to finish...
+Waiting for 8 sub-compilation(s) to finish...
 Compiled 16 Verilog Units
 Built simulation executable C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.exe
-Fuse Memory Usage: 17936 KB
-Fuse CPU Usage: 264 ms
+Fuse Memory Usage: 17924 KB
+Fuse CPU Usage: 312 ms
