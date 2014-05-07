@@ -28,7 +28,8 @@ module topTest;
 	reg clk;
 	reg rst;
 
-	wire [31:0] readDataMem, ALUa, ALUb;
+	reg [7:0] cycle;
+	wire [31:0] readDataMem, ALUa, ALUb, writeData, instruction;
 
 	// Instantiate the Unit Under Test (UUT)
 	top uut (
@@ -36,19 +37,31 @@ module topTest;
 		.rst(rst),
 		.readDataMem(readDataMem),
 		.ALUa(ALUa),
-		.ALUb(ALUb)
+		.ALUb(ALUb),
+		.writeData(writeData),
+		.instruction(instruction)
 	);
 
 	always begin
 		#1
 		clk = ~clk;
-		$monitor("ReadDataMem =\t%b ALUa =\t%b ALUb =\t%b",readDataMem, ALUa, ALUb);
+		if (clk==1'b1) begin
+			cycle = cycle + 1;
+//			$monitor("Instruction = %b,\t ALU_a = %d,\t ALU_b =%d,\t Data_out =%d,\t Data_mem =%d", 
+//						instruction, ALUa, ALUb, writeData, readDataMem);
 		end
-
+	end
+		
+	always @ (ALUa, ALUb, instruction, writeData, readDataMem) begin
+		$monitor("Cycle = %d,\t Instruction = %b,\t ALU_a = %d,\t ALU_b =%d,\t Data_out =%d,\t Data_mem =%d", 
+						cycle, instruction, ALUa, ALUb, writeData, readDataMem);
+	end
+	
 	initial begin
 		// Initialize Inputs
 		clk = 0;
 		rst = 1;
+		cycle = 0;
 		#1;
 		rst = 0;
 		// Wait 100 ns for global reset to finish

@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module top( clk ,rst, readDataMem, ALUa, ALUb
+module top( clk ,rst, readDataMem, ALUa, ALUb, writeData, instruction
     );
 
 	input clk,rst;
@@ -29,7 +29,7 @@ module top( clk ,rst, readDataMem, ALUa, ALUb
 	// in and out of PC
 	wire [31:0] pcIn, pcOut; 
 	// out of instruction mem
-	wire [31:0] instruction; 
+	output [31:0] instruction; 
 	 
 	// countrol output
 	wire ALUSrc, memWrite, memRead, memToReg, regDst, regWrite, branchEq, branchNeq, jump; 
@@ -67,7 +67,7 @@ module top( clk ,rst, readDataMem, ALUa, ALUb
 	wire overflow;
 	
 	// mem to reg mux output
-	wire [31:0] writeData;
+	output [31:0] writeData;
 	
 	// data memory output
 	output [31:0] readDataMem;

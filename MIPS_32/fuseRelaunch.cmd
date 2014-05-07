@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.exe" -prj "C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest_beh.prj" "work.topTest" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.exe" -prj "C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest_beh.prj" "work.topTest" "work.glbl" 
