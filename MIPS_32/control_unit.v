@@ -62,6 +62,25 @@ module control_unit( inst, RegDst, RegWrite, ALUSrc, ALUOp, MemWrite, MemRead, M
 			MemToReg = 0;
 			ALUOp = 2'b00;
 		end
+		//br
+		else if (inst == 6'b000100) begin // not correct
+			RegWrite = 0;
+			RegDst = 0;
+			ALUSrc = 1;
+			MemWrite = 1;
+			MemToReg = 0;
+			ALUOp = 2'b00;
+		end
+		//bne
+		else if(inst == 6'b000101) begin // not correct
+			RegWrite = 0;
+			RegDst = 0;
+			ALUSrc = 1;
+			MemWrite = 1;
+			MemToReg = 0;
+			ALUOp = 2'b00;
+		end
+		//
 		
 	end
 
