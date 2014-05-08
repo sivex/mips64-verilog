@@ -61,7 +61,7 @@
   # bne   rs,  rt, offset
   # if rs != rt then branch
   # BINARY: 000101 10011 10100 0000000000000100
-  #         BNE    19    20    -1
+  #         BNE    19    20    +4
   #         opcode rs    rt    offset
 
     addi $s3, $s3, 1
