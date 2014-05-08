@@ -53,11 +53,11 @@
   #         LW     0     20    0
   #         opcode base  rt    offset
 
-    bne  $s3, $s4, jumpA
+    bne  $s4, $s3, jumpA
   # bne   rs,  rt, offset
   # if rs != rt then branch
-  # BINARY: 000101 10011 10100 0000000000000001
-  #         BNE    19    20    +1
+  # BINARY: 000101 10100 10011 0000000000000001
+  #         BNE    20    19    +1
   #         opcode rs    rt    offset
 
     addi $s3, $s3, 1
