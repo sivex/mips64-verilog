@@ -153,7 +153,7 @@ module top( clk ,rst, readDataMem, ALUa, ALUb, writeData, instruction
 	mux_32bit branchMux (
 		 .a(noBranchInstruction), 
 		 .b(branchAddress), 
-		 .ctrl(branchCtrl), // branchCtrl was removed for testing without branch controls
+		 .ctrl(branchCtrl),
 		 .outM(branchOut)
 		 );
 
