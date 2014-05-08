@@ -11,6 +11,7 @@
 
 # Code goes here
 .text
+    # 5
     addi $s0, $zero, 1
   # addi  rt,    rs, immediate
   # rt <- rs + immediate
@@ -18,6 +19,7 @@
   #         ADDI   0     16    1
   #         opcode rs    rt    immediate
 
+    # 6
     addi $s1, $zero, 2
   # addi  rt,    rs, immediate
   # rt <- rs + immediate
@@ -25,6 +27,7 @@
   #         ADDI   0     17    2
   #         opcode rs    rt    immediate
 
+    # 7
     add  $s2, $s0, $s1
   # add   rd,  rs,  rt
   # rd <- rs + rt
@@ -32,6 +35,7 @@
   #         SPEC   16    17    18    0     ADD
   #         opcode rs    rt    rd    shamt funct
 
+    # 8
     sw   $s2, 0(0)
   # sw    rt, offset(base)
   # memory[base + offset] <- rt
@@ -39,6 +43,7 @@
   #         SW     0     18    0
   #         opcode base  rt    offset
 
+    # 9
     add  $s3, $zero, $zero
   # add   rd,    rs,    rt
   # rd <- rs + rt
@@ -46,6 +51,7 @@
   #         SPEC   0     0     19    0     ADD
   #         opcode rs    rt    rd    shamt funct
 
+    # 10
     lw   $s4, 0(0)
   # lw    rt, offset(base)
   # rt <- memory[base + offset]
@@ -53,6 +59,7 @@
   #         LW     0     20    0
   #         opcode base  rt    offset
 
+    # 11
     bne  $s4, $s3, jumpA
   # bne   rs,  rt, offset
   # if rs != rt then branch
@@ -60,6 +67,7 @@
   #         BNE    20    19    +1
   #         opcode rs    rt    offset
 
+    # 12
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -68,12 +76,14 @@
   #         opcode rs    rt    immediate
 
   jumpA:
+    # 13
     beq  $s2, $s4, jumpB
   # beq   rs,  rt, offset
   # if rs == rt then branch
   # BINARY: 000100 10010 10100 0000000000000010
   #         BEQ    18    20    +2
 
+    # 14
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -81,6 +91,7 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
+    # 15
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -89,12 +100,14 @@
   #         opcode rs    rt    immediate
 
   jumpB:
+    # 16
     j    jumpC
   # j    instr_index
   # BINARY: 000010 00000000000000000000010101
   #         J      21
   #         opcode instr_index
 
+    # 17
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -102,6 +115,7 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
+    # 18
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -109,6 +123,7 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
+    # 19
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -116,6 +131,7 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
+    # 20
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -124,6 +140,7 @@
   #         opcode rs    rt    immediate
 
   jumpC:
+    # 21
     addi $s5, $zero, 32
   # addi  rt,    rs, immediate
   # rt <- rs + immediate
