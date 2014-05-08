@@ -1,41 +1,9 @@
 ISim log file
-Running: C:\Users\skrim\Documents\GitHub\mips64-verilog\MIPS_32\topTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/testConfigP.wcfg -wdb C:/Users/skrim/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.wdb 
+Running: C:\Users\Paul\Documents\GitHub\mips64-verilog\MIPS_32\topTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/testConfigP.wcfg -wdb C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.wdb 
 ISim O.61xd (signature 0x1cce1bb2)
 This is a Full version of ISim.
 Time resolution is 1 ps
 # onerror resume
-# run 50 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
-Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
-Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   3,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   4,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   5,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   6,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   7,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   8,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =   9,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  10,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  11,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  12,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  13,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  14,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  15,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  16,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  17,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  18,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  19,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  20,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  21,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  22,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  23,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  24,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-Cycle =  25,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
-ISim O.61xd (signature 0x1cce1bb2)
-This is a Full version of ISim.
 # run 50 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
