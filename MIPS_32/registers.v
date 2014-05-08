@@ -30,7 +30,7 @@ module registers( readReg1, readReg2, writeReg, writeData, readData1, readData2,
 
 
 	// read registers on negative edge of current clock
-	always @ (negedge clk) begin
+	always @ * begin
 		readData1 <= REGISTERS[readReg1];
 		readData2 <= REGISTERS[readReg2];
 	end

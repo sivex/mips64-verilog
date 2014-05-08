@@ -40,6 +40,7 @@ module topTest;
 		.ALUb(ALUb),
 		.writeData(writeData),
 		.instruction(instruction)
+		
 	);
 
 	always begin
@@ -62,7 +63,7 @@ module topTest;
 		clk = 0;
 		rst = 1;
 		cycle = 0;
-		#1;
+		#2;
 		rst = 0;
 		// Wait 100 ns for global reset to finish
 		//#100;

@@ -25,11 +25,12 @@ module data_MEM(address, writeData, readDataMem, memWrite, memRead, clk);
 	reg [(DATA_BITS-1):0] data_RAM [(2**ADDR_BITS)-1:0];
 
 	// Main RAM code
+	
+	always @ * begin
+		readDataMem <= data_RAM[address];
+		end
+		
 	always@ (posedge clk) begin
-		// When en is on, the RAM is active.
-		if (!memRead) begin
-			// When wr is on, the corresponding address is written in the Data
-			// RAM and output.
 			if (memWrite) begin
 				data_RAM[address] <= writeData;
 				readDataMem <= writeData;
@@ -39,6 +40,6 @@ module data_MEM(address, writeData, readDataMem, memWrite, memRead, clk);
 				readDataMem <= data_RAM[address];
 			end
 		end
-	end
+	
 
 endmodule

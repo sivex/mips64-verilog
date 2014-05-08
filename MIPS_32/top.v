@@ -137,15 +137,15 @@ module top( clk ,rst, readDataMem, ALUa, ALUb, writeData, instruction
 		 );
 
 	// Instantiate the branch shift
-	shifter branchShifter (
-		 .a(signExtendOut), 
-		 .outS(shiftOut)
-		 );
+	//shifter branchShifter (
+		// .a(signExtendOut), 
+		 //.outS(shiftOut)
+		 //);
 
 	// Instantiate the branch address computation
 	adder branchAddressAdder (
 		 .a(noBranchInstruction), 
-		 .b(shiftOut), 
+		 .b(signExtendOut), 
 		 .outA(branchAddress)
 		 );
 		 

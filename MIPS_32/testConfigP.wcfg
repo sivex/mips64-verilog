@@ -3,14 +3,14 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/Users/aaron_win7/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="topTest" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/topTest/readDataMem" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">readDataMem[31:0]</obj_property>
       <obj_property name="ObjectShortName">readDataMem[31:0]</obj_property>
@@ -34,7 +34,6 @@
    <wvobject fp_name="/topTest/instruction" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">instruction[31:0]</obj_property>
       <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/topTest/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -43,5 +42,14 @@
    <wvobject fp_name="/topTest/rst" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/programCounter/index_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">index_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">index_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topTest/uut/instructionMemory/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
    </wvobject>
 </wave_config>

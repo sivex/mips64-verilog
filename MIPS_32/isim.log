@@ -12,27 +12,441 @@ Time resolution is 1 ps
 # run 50 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   7,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   8,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   9,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  11,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  12,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  13,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  14,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  15,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  16,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  17,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  18,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  19,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  20,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  21,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  22,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  23,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  24,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  25,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   7,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   8,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   9,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  11,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  12,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  13,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  14,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  15,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  16,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  17,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  18,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  19,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  20,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  21,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  22,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  23,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  24,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  25,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   7,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   8,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   9,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  11,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  12,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  13,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  14,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  15,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  16,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  17,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  18,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  19,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  20,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  21,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  22,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  23,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  24,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  25,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   7,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   8,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   9,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  11,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  12,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  13,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  14,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  15,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  16,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  17,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  18,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  19,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  20,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  21,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  22,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  23,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  24,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  25,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   7,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   8,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =   9,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  11,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  12,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  13,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  14,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  15,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  16,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  17,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  18,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  19,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  20,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  21,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  22,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  23,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  24,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+Cycle =  25,	 Instruction = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,	 ALU_a =          x,	 ALU_b =         x,	 Data_out =         0,	 Data_mem =         x
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
 Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
 Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
 Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
 Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
 Cycle =   5,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
 Cycle =   6,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
-Cycle =   7,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
 Cycle =   7,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
-Cycle =   8,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          1,	 ALU_b =         0,	 Data_out =         1,	 Data_mem =         x
 Cycle =   8,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
-Cycle =   9,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         3,	 Data_out =         3,	 Data_mem =         3
 Cycle =   9,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
 Cycle =  10,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
-Cycle =  11,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
-Cycle =  12,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
-Cycle =  13,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
-Cycle =  14,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
-Cycle =  15,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
-Cycle =  16,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  12,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          1,	 ALU_b =         1,	 Data_out =         2,	 Data_mem =         x
+Cycle =  14,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          2,	 ALU_b =         1,	 Data_out =         3,	 Data_mem =         x
+Cycle =  15,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  16,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          3,	 ALU_b =         1,	 Data_out =         4,	 Data_mem =         x
 Cycle =  17,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  21,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  22,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  23,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  24,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  25,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =   7,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
+Cycle =   8,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
+Cycle =   9,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
+Cycle =  12,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =  14,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          1,	 ALU_b =         1,	 Data_out =         2,	 Data_mem =         x
+Cycle =  15,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          2,	 ALU_b =         1,	 Data_out =         3,	 Data_mem =         x
+Cycle =  16,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  17,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          3,	 ALU_b =         1,	 Data_out =         4,	 Data_mem =         x
+Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  21,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  22,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  23,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  24,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  25,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =   7,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
+Cycle =   8,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
+Cycle =   9,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
+Cycle =  12,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =  14,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          1,	 ALU_b =         1,	 Data_out =         2,	 Data_mem =         x
+Cycle =  15,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          2,	 ALU_b =         1,	 Data_out =         3,	 Data_mem =         x
+Cycle =  16,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  17,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          3,	 ALU_b =         1,	 Data_out =         4,	 Data_mem =         x
+Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  21,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  22,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  23,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  24,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  25,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =   7,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
+Cycle =   8,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
+Cycle =   9,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
+Cycle =  12,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =  14,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          1,	 ALU_b =         1,	 Data_out =         2,	 Data_mem =         x
+Cycle =  15,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          2,	 ALU_b =         1,	 Data_out =         3,	 Data_mem =         x
+Cycle =  16,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  17,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          3,	 ALU_b =         1,	 Data_out =         4,	 Data_mem =         x
+Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  21,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  22,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  23,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  24,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  25,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =   7,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
+Cycle =   8,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
+Cycle =   9,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
+Cycle =  12,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  14,	 Instruction = 11111111111111111111111111111111,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  15,	 Instruction = 10101010101010101010101010101010,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  16,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  17,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  21,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  22,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  23,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  24,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  25,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =   7,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
+Cycle =   8,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
+Cycle =   9,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
+Cycle =  12,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  14,	 Instruction = 11111111111111111111111111111111,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  15,	 Instruction = 10101010101010101010101010101010,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  16,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  17,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  21,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  22,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  23,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  24,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  25,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 50 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Cycle =   1,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   2,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   3,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   4,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   5,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =   6,	 Instruction = 00100000000100000000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
+Cycle =   7,	 Instruction = 00100000000100010000000000000010,	 ALU_a =          0,	 ALU_b =         2,	 Data_out =         2,	 Data_mem =         x
+Cycle =   8,	 Instruction = 00000010000100011001000000100000,	 ALU_a =          1,	 ALU_b =         2,	 Data_out =         3,	 Data_mem =         x
+Cycle =   9,	 Instruction = 10101100000100100000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         x
+Cycle =  10,	 Instruction = 00000000000000001001100000100000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  11,	 Instruction = 10001100000101000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         3
+Cycle =  12,	 Instruction = 00010110100100110000000000000001,	 ALU_a =          3,	 ALU_b =         0,	 Data_out =         3,	 Data_mem =         x
+Cycle =  13,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  14,	 Instruction = 11111111111111111111111111111111,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  15,	 Instruction = 10101010101010101010101010101010,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  16,	 Instruction = 00001000000000000000000000010101,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
+Cycle =  17,	 Instruction = 00100010011100110000000000000001,	 ALU_a =          0,	 ALU_b =         1,	 Data_out =         1,	 Data_mem =         x
 Cycle =  18,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
 Cycle =  19,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
 Cycle =  20,	 Instruction = 00000000000000000000000000000000,	 ALU_a =          0,	 ALU_b =         0,	 Data_out =         0,	 Data_mem =         3
