@@ -1,13 +1,13 @@
 # Required Operations:
 # - add  _x_
 # - addi _x_
-# - beq  ___
+# - beq  _x_
 # - bne  _x_
-# - j    ___
+# - j    _x_
 # - lw   _x_
 # - sw   _x_
 
-# 'Compiled' code is in `MIPS_32/instructions.txt`
+# 'Compiled' code is in `MIPS_32/instructionsTest.txt`
 
 # Code goes here
 .text
@@ -53,15 +53,11 @@
   #         LW     0     20    0
   #         opcode base  rt    offset
 
-# -----------------------------------------------------------------------------
-#   instructionsTest.txt ends here
-# -----------------------------------------------------------------------------
-
     bne  $s3, $s4, jumpA
   # bne   rs,  rt, offset
   # if rs != rt then branch
-  # BINARY: 000101 10011 10100 0000000000000100
-  #         BNE    19    20    +4
+  # BINARY: 000101 10011 10100 0000000000000001
+  #         BNE    19    20    +1
   #         opcode rs    rt    offset
 
     addi $s3, $s3, 1
@@ -71,6 +67,34 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
+  jumpA:
+    beq  $s2, $s4, jumpB
+  # beq   rs,  rt, offset
+  # if rs == rt then branch
+  # BINARY: 000100 10010 10100 0000000000000010
+  #         BEQ    18    20    +2
+
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
+
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
+
+  jumpB:
+    j    jumpC
+  # j    instr_index
+  # BINARY: 000010 00000000000000000000010101
+  #         J      21
+  #         opcode instr_index
+
     addi $s3, $s3, 1
   # addi  rt,  rs, immediate
   # rt <- rs + immediate
@@ -85,6 +109,26 @@
   #         ADDI   19    19    1
   #         opcode rs    rt    immediate
 
-jumpA:
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
 
+    addi $s3, $s3, 1
+  # addi  rt,  rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 10011 10011 0000000000000001
+  #         ADDI   19    19    1
+  #         opcode rs    rt    immediate
 
+  jumpC:
+    addi $s5, $zero, 32
+  # addi  rt,    rs, immediate
+  # rt <- rs + immediate
+  # BINARY: 001000 00000 10101 0000000000100000
+  #         ADDI   0     21
+  #         opcode rs    rt    immediate
+
+    halt
