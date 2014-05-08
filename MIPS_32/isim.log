@@ -1,6 +1,11 @@
 ISim log file
-Running: C:\Users\Paul\Documents\GitHub\mips64-verilog\MIPS_32\topTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/testConfigP.wcfg -wdb C:/Users/Paul/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.wdb 
+Running: C:\Users\aaron_win7\Documents\GitHub\mips64-verilog\MIPS_32\topTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view C:/Users/aaron_win7/Documents/GitHub/mips64-verilog/MIPS_32/testConfigP.wcfg -wdb C:/Users/aaron_win7/Documents/GitHub/mips64-verilog/MIPS_32/topTest_isim_beh.wdb 
 ISim O.61xd (signature 0x1cce1bb2)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
 This is a Full version of ISim.
 Time resolution is 1 ps
 # onerror resume
