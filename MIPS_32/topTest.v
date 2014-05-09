@@ -2,7 +2,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer:
+// Engineer:	Aaron David, Paul Giro, Kevin Sears, Griffin Yourick
 //
 // Create Date:   17:21:28 05/06/2014
 // Design Name:   top

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Company: UMBC
-// Engineer: Paul Giro
+// Engineer: Paul Giro, Aaron David, Griffin Yourick, Kevin Sears
 //
 // Create Date: 21:24:11 04/01/2014
 // Module Name: data_MEM
