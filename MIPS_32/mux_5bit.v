@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 	UMBC
-// Engineer: 	Kevin Sears
+// Engineer: 	Aaron David, Paul Giro, Kevin Sears, Griffin Yourick
 //
 // Create Date: 17:21:03 04/16/2014
 // Module Name: mux_5bit

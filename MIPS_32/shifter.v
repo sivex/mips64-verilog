@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Company:
-// Engineer: 	Paul Giro
+// Engineer: 	Aaron David, Paul Giro, Kevin Sears, Griffin Yourick
 //
 // Create Date: 21:49:26 04/02/2014
 // Module Name: shifter

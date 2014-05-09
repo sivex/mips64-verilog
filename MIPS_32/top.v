@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 	Aaron David, Paul Giro, Kevin Sears, Griffin Yourick
 // 
 // Create Date:    16:03:13 05/06/2014 
 // Design Name: 
@@ -10,12 +10,6 @@
 // Target Devices: 
 // Tool versions: 
 // Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
 module top( clk ,rst, readDataMem, ALUa, ALUb, writeData, instruction
