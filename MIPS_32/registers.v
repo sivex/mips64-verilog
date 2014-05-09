@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Company:		UMBC
-// Engineer:
+// Engineer:	Paul Giro, Kevin Sears, Griffin Yourick, Aaron David
 //
 // Create Date: 23:58:03 04/16/2014
 // Module Name: registers

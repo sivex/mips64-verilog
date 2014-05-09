@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 	UMBC
-// Engineer: 	Paul Giro
+// Engineer: 	Paul Giro, Kevin Sears, Griffin Yourick, Aaron David
 //
 // Create Date: 21:52:13 04/02/2014
 // Module Name: add_One
