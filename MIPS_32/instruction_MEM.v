@@ -28,7 +28,7 @@ module instruction_MEM(index, instruction, clk);
 	end
 
 	// Output instruction at given index on positive edge
-	always@ (posedge clk) begin
+	always@ (*) begin
 
 		instruction <= instruction_RAM[index];
 	
