@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 	UMBC
-// Engineer: 	Paul Giro, Kevin Sears, Griffin Yourick, Aaron David
+// Engineer: 	Paul Giro
 //
 // Create Date: 17:41:43 04/05/2014
 // Module Name: ALU

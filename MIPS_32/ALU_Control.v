@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 	Paul Giro, Kevin Sears, Griffin Yourick, Aaron David
+// Engineer: 
 // 
 // Create Date:    17:20:38 04/17/2014 
 // Design Name: 

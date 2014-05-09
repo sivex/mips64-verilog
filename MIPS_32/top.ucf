@@ -1,6 +1,3 @@
 #Created by Constraints Editor (xc3s500e-fg320-4) - 2014/03/17
-// Engineers:	Paul Giro, Kevin Sears, Griffin Yourick, Aaron David
-//
-////////////////////////////////////////////////////////////////////
 NET "clk" LOC = "C9" | IOSTANDARD = LVCMOS33;
 NET "clk" PERIOD = 100 ns HIGH 40%;
